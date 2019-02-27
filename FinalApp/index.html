@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<title>Document</title> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- meta使用viewport以确保页面可自由缩放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引入 jQuery Mobile 样式 -->
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<!-- 引入 jQuery 库 -->
+	<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- 引入 jQuery Mobile 库 -->
+	<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+	<section id="login" data-role="page"  data-theme="b">
+		<header data-role="header">
+			<h1>用户登录</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<img src="img/header.jpeg" class="login_pic">
+			<form method="get" action="">
+			<div class="login_box">
+				<input type="text" name="name" id="name" placeholder="用户名">
+			</br>
+			    <input type="password" name="name" id="name" placeholder="密码">
+			</br>
+			<a href="#home" data-role="button" data-transition="pop" class="login_button1">登录</a>
+            <a href="#register" data-role="button" data-transition="pop" class="login_button2">注册</a>
+            </br>
+            </br>
+            </br>
+            </br>
+            <a href="#findPwd" style="float: right;">找回密码</a>
+
+			</div>
+            </form>            
+		</article><!-- /content -->
+		<!-- /footer -->
+	</section><!-- /page -->
+
+
+
+	<section id="register" data-role="page" data-theme="b">
+		<header data-role="header">
+			<h1>用户注册</h1>
+            <a href="#login" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content" style="height: 100%">
+			<form>
+			<div class="login_box">
+				<input type="text" name="name" id="name" placeholder="您的用户名/手机号">
+			    <a href="##" style="float: right;">发送验证码 </a> 
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="密码">			   
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="确认密码">
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="短信验证码">
+			    </br>
+			    <a href="#login" data-role="button" data-transition="pop" class="login_button1" style="margin-left: 35%;">确认</a>
+			</div>
+			</form>
+		</article><!-- /content -->
+		<!-- /footer -->
+	</section><!-- /page -->
+
+	<section id="findPwd" data-role="page" data-theme="b">
+		<header data-role="header">
+			<h1>用户注册</h1>
+            <a href="#login" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content" style="height: 100%">
+			<form>
+			<div class="login_box">
+				<input type="text" name="name" id="name" placeholder="您的用户名/手机号">
+			    <a href="##" style="float: right;">发送验证码 </a> 
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="短信验证码">			   
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="重置密码">
+			    </br>
+			    <input type="password" name="name" id="name" placeholder="密码">
+			    </br>
+			    <a href="#login" data-role="button" data-transition="pop" class="login_button1" style="margin-left: 35%;">确认</a>
+			</div>
+			</form>
+		</article><!-- /content -->
+		<!-- /footer -->
+	</section><!-- /page -->
+
+    <section id="thanks" data-role="page" data-theme="b">
+        <header data-role="header">
+            <h1>项目鸣谢</h1>
+            <a href="#login" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content" style="height: 100%">
+            <h1>岑泽鸡小组共同研发</h1>
+        </article><!-- /content -->
+        <!-- /footer -->
+    </section><!-- /page -->
+
+	<section id="home" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>个人中心</h1>
+			<a href="#login" data-role="button" style="float: right;" data-transition="pop" >退出</a>
+		</header><!-- /header -->
+		<article data-role="content">
+
+			<div class="ui-grid-a" style="margin-top: 15%;">
+                <div class="ui-block-a">
+                	<div class="home_pic">
+                		<img src="img/笔.png">
+                	</div>
+                	</br>
+                	<a href="#adduser" data-role="button" data-transition="pop" >填写我的信息表</a>
+                	</br>
+                	<a href="#seeuser" data-role="button" data-transition="pop" >查看我的信息表</a>
+                </div>
+                <div class="ui-block-b">
+                	<div  class="home_pic">
+                		<img src="img/扳手.png">
+                	</div>
+                   	</br>
+                	<a href="#addskill" data-role="button" data-transition="pop" >填写孩子学习技能表</a>
+                	</br>
+                	<a href="#seeskill" data-role="button" data-transition="pop" >查看孩子学习技能表</a>
+                </div>
+                
+                <div class="ui-block-a">
+                    </br>
+                	<div  class="home_pic">
+                		<img src="img/爱心.png">
+                	</div>
+                    </br>
+                	<a href="#addplan" data-role="button" data-transition="pop">填写孩子成长规划表</a>
+                	</br>
+                	<a href="#seeplan" data-role="button" data-transition="pop">查看孩子成长规划表</a>
+                </div>
+                <div class="ui-block-b"></br>
+                	<div  class="home_pic">
+                		<img src="img/论坛.png">
+                	</div>
+                	</br>
+                	<a href="#luntan" data-role="button" data-transition="pop">进入成长论坛</a>
+                	</br>
+                	<a href="#profess" data-role="button" data-transition="pop">专家问题咨询</a>
+                </div>
+               
+            </div>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+		</footer>
+	</section><!-- /page -->
+
+	<section id="profess" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>砖家咨询</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"> </a>
+		</header><!-- /header -->
+		<article data-role="content">
+            <ul data-role="listview" data-inset="true">    
+                <li><a href="#profess_info" data-transition="pop">我儿子岑泽鸡数学老不及格怎么办?</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子管教不严，危害大吗？</a></li>
+                <li><a href="#profess_info" data-transition="pop">怎么帮孩子戒网瘾？？在线等，急！</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子厌学了，咋整？</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子准备高考了，怎么激励他呀</a></li>   
+                <li><a href="#profess_info" data-transition="pop">有谁会打篮球，教教我孩子</a></li>
+                <li><a href="#profess_info" data-transition="pop">别说了，这个软件续费多少钱，真好用啊都</a></li>
+                <li><a href="#profess_info" data-transition="pop">冲100能得年度会员吗？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我儿子自恋，有处方不？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我女儿阮阮老是傻笑，怎么打醒她？</a></li>   
+                <li><a href="#profess_info" data-transition="pop">我孩子黄宗泽太帅了，老被别人打，专家有妙招不</a></li>
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#profess" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#profess" data-role="button" data-transition="pop" style="color: red">1</a></li>
+                    <li><a href="#profess1" data-role="button" data-transition="pop">2</a></li>
+                    <li><a href="#profess" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#profess1" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+			
+               
+            </div>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+		</footer>
+	</section><!-- /page -->
+
+    <section id="profess1" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>砖家咨询</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"> </a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <ul data-role="listview" data-inset="true">    
+                <li><a href="#profess_info" data-transition="pop">有谁会打篮球，教教我孩子</a></li>
+                <li><a href="#profess_info" data-transition="pop">别说了，这个软件续费多少钱，真好用啊都</a></li>
+                <li><a href="#profess_info" data-transition="pop">冲100能得年度会员吗？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我儿子自恋，有处方不？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我女儿阮阮老是傻笑，怎么打醒她？</a></li>   
+                <li><a href="#profess_info" data-transition="pop">我孩子黄宗泽太帅了，老被别人打，专家有妙招不</a></li>
+                <li><a href="#profess_info" data-transition="pop">我儿子岑泽鸡数学老不及格怎么办?</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子管教不严，危害大吗？</a></li>
+                <li><a href="#profess_info" data-transition="pop">怎么帮孩子戒网瘾？？在线等，急！</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子厌学了，咋整？</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子准备高考了，怎么激励他呀</a></li> 
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#profess" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#profess" data-role="button" data-transition="pop">1</a></li>
+                    <li><a href="#profess1" data-role="button" data-transition="pop" style="color: red">2</a></li>
+                    <li><a href="#profess1" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#profess2" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+            
+               
+            </div>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed">
+            <div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+        </footer>
+    </section><!-- /page -->
+
+    <section id="profess2" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>砖家咨询</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"> </a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <ul data-role="listview" data-inset="true">    
+                <li><a href="#profess_info" data-transition="pop">怎么帮孩子戒网瘾？？在线等，急！</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子厌学了，咋整？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我儿子自恋，有处方不？</a></li>
+                <li><a href="#profess_info" data-transition="pop">我女儿阮阮老是傻笑，怎么打醒她？</a></li>   
+                <li><a href="#profess_info" data-transition="pop">我孩子黄宗泽太帅了，老被别人打，专家有妙招不</a></li>
+                <li><a href="#profess_info" data-transition="pop">我儿子岑泽鸡数学老不及格怎么办?</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子管教不严，危害大吗？</a></li>
+                <li><a href="#profess_info" data-transition="pop">孩子准备高考了，怎么激励他呀</a></li>   
+                <li><a href="#profess_info" data-transition="pop">有谁会打篮球，教教我孩子</a></li>
+                <li><a href="#profess_info" data-transition="pop">别说了，这个软件续费多少钱，真好用啊都</a></li>
+                <li><a href="#profess_info" data-transition="pop">冲100能得年度会员吗？</a></li>
+            </ul>
+            <div data-role="navbar">
+                <div data-role="navbar">
+                <ul>
+                    <li><a href="#profess1" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#profess1" data-role="button" data-transition="pop">2</a></li>
+                    <li><a href="#profess2" data-role="button" data-transition="pop"  style="color: red">3</a></li>
+                    <li><a href="#profess2" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#profess" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+            </div>
+            
+               
+            </div>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed">
+            <div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+        </footer>
+    </section><!-- /page -->
+
+	<section id="luntan" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>成长论坛</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3>孩子最近不玩搬砖F了，这你敢信？</h3>
+                    <a href="#luntan_info">
+                        <img src="img/home5.jpg">
+                    
+                        
+                        <span>黄宗泽：以前孩子都是一日三餐无砖不欢，现在都不玩了，我不敢相信</span>
+                </a></li>
+                <li>
+                    <h3>和朋友去夏令营玩</h3>
+                    <a href="#luntan_info">
+                        
+                    
+                        <img src="img/home3.jpg">
+                        <span>阮羊羊：我前几天拍的</span>
+                </a></li>
+                
+                <li>
+                	<h3>嗮一下我的崽子们</h3>
+                	<a href="#luntan_info">
+                	    
+                  	<img src="img/home1.jpg">
+                	<span>岑泽鸭：我崽子多吧？</span>
+                </a></li>
+                <li>
+                	<h3>找个人打网球</h3>
+                	<a href="#luntan_info">
+                        <img src="img/home6.jpg">
+                	
+                		
+                		<span>衡衡：嗯。</span>
+                </a></li>
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#luntan" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#luntan" data-role="button" data-transition="pop" style="color: red">1</a></li>
+                    <li><a href="#luntan1" data-role="button" data-transition="pop">2</a></li>
+                    <li><a href="#luntan" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#luntan1" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+           
+
+            
+            </div>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+		</footer>
+	</section><!-- /page -->
+
+    <section id="luntan1" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>成长论坛</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3>找个人打网球</h3>
+                    <a href="#luntan_info">
+                        <img src="img/home6.jpg">
+                    
+                        
+                        <span>衡衡：嗯。</span>
+                </a></li>
+                <li>
+                    <h3>孩子最近不玩搬砖F了，这你敢信？</h3>
+                    <a href="#luntan_info">
+                        <img src="img/home5.jpg">
+                    
+                        
+                        <span>黄宗泽：以前孩子都是一日三餐无砖不欢，现在都不玩了，我不敢相信</span>
+                </a></li>
+                <li>
+                    <h3>嗮一下我的崽子们</h3>
+                    <a href="#luntan_info">
+                        
+                    <img src="img/home1.jpg">
+                    <span>岑泽鸭：我崽子多吧？</span>
+                </a></li>
+                <li>
+                    <h3>和朋友去夏令营玩</h3>
+                    <a href="#luntan_info">
+                        
+                    
+                        <img src="img/home3.jpg">
+                        <span>阮羊羊：我前几天拍的</span>
+                </a></li>
+                
+                
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#luntan" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#luntan" data-role="button" data-transition="pop">1</a></li>
+                    <li><a href="#luntan1" data-role="button" data-transition="pop" style="color: red">2</a></li>
+                    <li><a href="#luntan" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#luntan2" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+           
+            
+               
+            </div>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed">
+            <div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+        </footer>
+    </section><!-- /page -->
+
+    <section id="luntan2" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>成长论坛</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3>嗮一下我的崽子们</h3>
+                    <a href="#luntan_info">
+                        
+                    <img src="img/home1.jpg">
+                    <span>岑泽鸭：我崽子多吧？</span>
+                </a></li>
+                <li>
+                    <h3>和朋友去夏令营玩</h3>
+                    <a href="#luntan_info">
+                        
+                    
+                        <img src="img/home3.jpg">
+                        <span>阮羊羊：我前几天拍的</span>
+                </a></li>
+                
+                <li>
+                    <h3>找个人打网球</h3>
+                    <a href="#luntan_info">
+                        <img src="img/home6.jpg">
+                    
+                        
+                        <span>衡衡：嗯。</span>
+                </a></li>
+                <li>
+                    <h3>孩子最近不玩搬砖F了，这你敢信？</h3>
+                    <a href="#luntan_info">
+                        <img src="img/home5.jpg">
+                    
+                        
+                        <span>黄宗泽：以前孩子都是一日三餐无砖不欢，现在都不玩了，我不敢相信</span>
+                </a></li>
+            </ul>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#luntan1" data-role="button" data-transition="pop"><<</a></li>
+                    <li><a href="#luntan1" data-role="button" data-transition="pop">2</a></li>
+                    <li><a href="#luntan2" data-role="button" data-transition="pop" style="color: red">3</a></li>
+                    <li><a href="#luntan2" data-role="button" data-transition="pop">..</a></li>   
+                    <li><a href="#luntan2" data-role="button" data-transition="pop">>></a></li>
+                </ul>
+            </div>
+           
+            
+               
+            </div>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed">
+            <div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+        </footer>
+    </section><!-- /page -->
+
+    <section id="luntan_info" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>成长论坛</h1>
+            <a href="#luntan" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h1 style="text-align: center;">孩子最近不玩搬砖F了，这你敢信？</h1><br>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/狗狗.jpg">
+
+                        <span>我孩子岑爆肝不搬砖了，以前孩子都是一日三餐无砖不欢，现在都不玩了就一心向学，我佛了!
+                        </span>
+                        </div>
+                        <span class="luntan_name">黄宗泽</span>
+
+                        <span class="luntan_date">2019-01-01</span>
+                        <span class="luntan_good">71 赞</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                 <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/cat.jpeg">
+                        <span>正常，我孩子也这么乖</span>
+                        </div>
+                        <span class="luntan_name">阮良海</span>
+
+                        <span class="luntan_date">2019-01-02</span>
+                        <span class="luntan_good">30 赞</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                 <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/郭子仪.jpg">
+                        <span>好事啊！</span>
+                        </div>
+                        <span class="luntan_name">衡衡</span>
+
+                        <span class="luntan_date">2019-01-03</span>
+                        <span class="luntan_good">20 赞</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                 <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/egg.jpg">
+                        <span>应该是分手受打鸡了吧？</span>
+                        </div>
+                        <span class="luntan_name">岑泽鸭</span>
+
+                        <span class="luntan_date">2019-01-03</span>
+                        <span class="luntan_good">130赞</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                 
+            </div>
+            <form>
+                <textarea placeholder="编辑您的回复.."></textarea>
+                <a href="#luntan" class="ui-btn ui-corner-all" data-transition="slide" style="width: 30%;margin: 0 auto;">回复</a>
+            </form>
+             
+            </div>
+        </article><!-- /content -->
+        
+    </section><!-- /page -->
+
+    <section id="profess_info" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>成长论坛</h1>
+            <a href="#profess" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h1 style="text-align: center;">我儿子岑泽鸡数学老不及格怎么办</h1><br>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/狗狗.jpg">
+
+                        <span>我儿子岑泽鸡数学老不及格怎么办?
+                        </span>
+                        </div>
+                        <span class="luntan_name">黄宗泽</span>
+
+                        <span class="luntan_date">2019-01-01</span>
+                        <span class="luntan_good">已解决</span>
+                        <img src="img/好评.png" class="luntan_pic">
+                </div>
+                 <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/header.jpeg">
+                        <span>多报点补习班给她，一次不会报两次，两次不会报三次，报到她会为止，往死里学！</span>
+                        </div>
+                        <span class="luntan_name">砖家A</span>
+
+                        <span class="luntan_date">2019-01-02</span>
+                        <span class="luntan_good">81 采纳</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                <div class="ui-block-a">
+                        <div class="luntan_part">
+                            <img src="img/header1.jpg">
+                        <span>下一个手机APP百词斩，包过！</span>
+                        </div>
+                        <span class="luntan_name">砖家B</span>
+
+                        <span class="luntan_date">2019-01-02</span>
+                        <span class="luntan_good">57 采纳</span>
+                        <img src="img/微笑.png" class="luntan_pic">
+                </div>
+                 
+                 
+            </div>
+            <form>
+                <textarea placeholder="编辑您的回复.."></textarea>
+                <a href="#profess" class="ui-btn ui-corner-all" data-transition="slide" style="width: 30%;margin: 0 auto;">回复</a>
+            </form>
+            
+             
+            </div>
+        </article><!-- /content -->
+        
+    </section><!-- /page -->
+
+    <!-- 规划/page -->
+
+	<section id="plan" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>我的规划表</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<div class="ui-grid-d">
+                </br>
+                </br>
+                <div class="ui-block-a">
+                     
+                    <span>规划阶段</span>
+                </div>
+                <div class="ui-block-b">
+                    
+                    <span>规划时间</span>
+                </div>
+                <div class="ui-block-c">
+                    
+                    <span>结束时间</span>
+                </div>
+                <div class="ui-block-d">
+                    
+                    <span>规划信息</span>
+                </div>  
+                <div class="ui-block-e">
+                    
+                    <span>规划任务</span>
+                </div> 
+                </br> 
+
+
+
+
+                <div class="ui-block-a">
+                    </br>
+                    </br>
+                    <span>阶段1</span>
+                </div>
+                <div class="ui-block-b">
+                    </br>
+                    </br>
+                    <span>03-09</span>
+                </div>
+                <div class="ui-block-c">
+                    </br>
+                    </br>
+                    <span>02-05</span>
+                </div>
+                <div class="ui-block-d">
+                    </br>
+                    </br>
+                    <a href="#seeplan" class="ui-btn ui-corner-all ui-shadow" style="font-size: 0.5em;">查看</a><br>
+                </div>  
+                <div class="ui-block-e">
+                    </br>
+                    </br>
+                    <a href="#work" class="ui-btn ui-corner-all ui-shadow" style="font-size: 0.5em;">查看</a><br>
+                </div>
+
+
+
+                <div class="ui-block-a">
+                    </br>
+                    </br>
+                    <span>阶段2</span>
+                </div>
+                <div class="ui-block-b">
+                    </br>
+                    </br>
+                    <span>06-06</span>
+                </div>
+                <div class="ui-block-c">
+                    </br>
+                    </br>
+                    <span>未完成</span>
+                </div>
+                <div class="ui-block-d">
+                    </br>
+                    </br>
+                    <a href="#seeplan" class="ui-btn ui-corner-all ui-shadow" style="font-size: 0.5em;">查看</a><br>
+                </div>  
+                <div class="ui-block-e">
+                    </br>
+                    </br>
+                    <a href="#work" class="ui-btn ui-corner-all ui-shadow" style="font-size: 0.5em;">查看</a><br>
+                </div> 
+            </div>
+            
+           
+			
+               
+            </div>
+		</article><!-- /content -->
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="home_nav">
+            <ul>
+            <li><a href="#plan" data-role="button" data-transition="flow">成长规划</a></li>
+            <li><a href="#luntan" data-role="button" data-transition="flow">成长论坛</a></li>
+            <li><a href="#profess" data-role="button" data-transition="flow">专家咨询</a></li>
+            <li><a href="#thanks" data-role="button" data-transition="flow">项目鸣谢</a></li>
+            </ul>
+        </div>
+		</footer>
+	</section><!-- /page -->
+
+	<section id="work" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>规划任务
+            </h1>
+			<a href="#plan" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h1>添加任务</h1>
+                </li>
+                <li>
+                    <h1>阶段</h1>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </li>
+                <li>
+                    <h1>任务内容</h1>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                	<h1>任务目标</h1>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <a href="#plan" class="ui-btn ui-corner-all ui-shadow" style="text-align: center;">确认</a><br>
+                </li>
+                <li>
+                	<h1 style="text-align: center;">已有任务</h1>
+                </li>
+                <li>
+                    <h1>阶段:</h1>
+                    
+                </li>
+                <li>
+                    <h1>任务内容:</h1>
+                </li>    
+                <li>
+                    <h1>任务目标:</h1>
+                    
+                </li>
+            </ul>
+            
+               
+            </div>
+		</article><!-- /content -->
+		\
+	</section><!-- /page -->
+
+	<section id="adduser" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>完善个人信息</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<form>
+				<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3>用户账号</h3>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <h3>真实姓名</h3>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <h3>电子邮箱</h3>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <h3>微信号码</h3>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <h3>孩子姓名</h3>
+                    <input type="text" name="username">
+                </li>
+                <li>
+                    <h3>孩子性别</h3>
+                    <select>
+                    	<option>男</option>
+                    	<option>女</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>孩子姓名</h3>
+                    <input type="month" name="username">
+                </li>
+                <li>
+                    <h3>孩子性格</h3>
+                    <select>
+                    	<option>规矩型</option>
+                    	<option>自我型</option>
+                    	<option>合群型</option>
+                    	<option>好动型</option>
+                    	<option>勤奋型</option>
+                    	<option>贪玩型</option>
+                    </select>
+                </li>
+                <li>
+                	<h3>略</h3>
+                </li>
+            </ul>
+            <a href="#home" class="ui-btn">确认</a>
+			</form>
+            
+           
+			
+               
+            </div>
+		</article><!-- /content -->
+	</section><!-- /page -->
+
+	<section id="seeuser" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>完善个人信息</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<form>
+				<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3>用户账号:</h3>
+                    
+                </li>
+                <li>
+                    <h3>真实姓名:</h3>
+                    
+                </li>
+                <li>
+                    <h3>电子邮箱:</h3>
+                    
+                </li>
+                <li>
+                    <h3>微信号码:</h3>
+                    
+                </li>
+                <li>
+                    <h3>孩子姓名:</h3>
+                    
+                </li>
+                <li>
+                    <h3>孩子性别:</h3>
+                    
+                </li>
+                <li>
+                    <h3>孩子姓名:</h3>
+                    
+                </li>
+                <li>
+                    <h3>孩子性格:</h3>
+                    
+                </li>
+                <li>
+                    <h3>孩子性格:</h3>
+                    
+                </li>
+                <li>
+                    <h3>亲属关系:</h3>
+                    
+                </li>
+                <li>
+                    <h3>就读学校:</h3>
+                    
+                </li>
+                <li>
+                	<h3>略</h3>
+                </li>
+            </ul>
+            <a href="#adduser" class="ui-btn">修改</a>
+			</form>              
+            </div>
+		</article><!-- /content -->
+	</section><!-- /page -->
+
+
+	<section id="addskill" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>孩子技能评定</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<form>
+				<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                	<h3 style="text-align: center;">项目有五个评定选项</h3>
+                    <h3 style="text-align: center;">没有、很轻、中等、偏重、严重</h3>
+                    <h3 style="text-align: center;">数字1、2、3、4、5为对应的评分</h3>
+                   
+                </li>
+                <li>
+                	<h1>一、注意力与自控力</h1>
+                </li>
+                <li>
+                    <h3>1.时常局促不安，心神不宁</h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>2.注意力不集中或精力分散 </h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>3.总是过于活跃（活动量大）</h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>4.做事不假思索</h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>5.完不成任务（虎头蛇尾）</h3>
+                    <select>
+                    	<option>男</option>
+                    	<option>女</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>6.易生气激怒</h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>7.不能独立做作业（要人监督）</h3>
+                    <select>
+                    	<option>没有</option>
+                    	<option>很轻</option>
+                    	<option>中等</option>
+                    	<option>偏重</option>
+                    	<option>严重</option>
+                    </select>
+                </li>
+                <li>
+                	<h3>略</h3>
+                </li>
+            </ul>
+            <a href="#home" class="ui-btn">确认</a>
+			</form>              
+            </div>
+		</article><!-- /content -->
+	</section><!-- /page -->
+    
+
+    <!-- 技能表/page -->
+	<section id="seeskill" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>孩子学习技能查询</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<form>
+				<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3 style="text-align: center;">选择您需要查询的技能类型</h3>
+                    <select>
+                    	<option>注意力与自控力</option>
+                    	<option>情绪和行为</option>
+                    	<option>自尊自信</option>
+                    	<option>学习环境</option>
+                    	<option>视觉信息加工</option>
+                        <option>学期成绩与不足</option>
+                    </select>
+                </li>
+                
+               
+            </thanks        <a href="#findskill" class="ui-btn">项目鸣谢查询</a>
+            <a href="#addskill" class="ui-btn">修改技能评定</a>
+			</form>              
+            </div>
+		</article><!-- /content -->
+	</section><!-- /page -->
+	<section id="findskill" data-role="page" data-theme="a">
+		<header data-role="header">
+			<h1>技能查询结果</h1>
+			<a href="#seeskill" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+		</header><!-- /header -->
+		<article data-role="content">
+			<form>
+				<ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h3 style="text-align: center;">您的孩子技能结果如下</h3>
+                   
+                </li>
+                <li>
+                	<h3 style="text-align: center;">自觉能力0分！</h3>
+                    <h3 style="text-align: center;">你的孩子岑泽鸡数学不及格！</h3>
+                    <h3 style="text-align: center;">请好好督促他！</h3>                   
+                </li>                               
+            </ul>
+			</form>              
+            </div>
+		</article><!-- /content -->
+	</section><!-- /page -->
+    
+    <!-- 计划表/page -->
+    <section id="addplan" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>规划信息</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <form>
+                <ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h1>计划阶段</h1>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>一、现状之知识</h3>
+                    </br>
+                    <h3>1.学业成就</h3>
+                    </br>
+                    <h3>学科知识</h3>
+                    <textarea placeholder="请在此输入最近一个学期所有科目的期末考试成绩">
+                        
+                    </textarea>
+                </li>
+                <li>
+                    <h3>社会知识</h3>
+                    <select>
+                        <option>了解</option>
+                        <option>理解</option>
+                        <option>运用</option>
+                        <option>分析</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>生活知识</h3>
+                    <select>
+                        <option>认知 </option>
+                        <option>习惯</option>
+                        <option>操作</option>
+                        <option>实践</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>其他知识</h3>
+                    <select>
+                        <option>弱 </option>
+                        <option>一般</option>
+                        <option>强</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>2.学业态度</h3>
+                    </br>
+                    <h3>学习态度</h3>
+                    <select>
+                        <option>认真</option>
+                        <option>一般</option>
+                        <option>不认真</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>学习专注</h3>
+                    <select>
+                        <option>弱 </option>
+                        <option>一般</option>
+                        <option>强</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>略</h3>
+                </li>
+            </ul>
+            <a href="#home" class="ui-btn">确认</a>
+            </form>              
+            </div>
+        </article><!-- /content -->
+    </section><!-- /page -->
+    <!-- 计划表/page -->
+    <section id="seeplan" data-role="page" data-theme="a">
+        <header data-role="header">
+            <h1>规划信息</h1>
+            <a href="#home" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext" data-transition="slide"></a>
+        </header><!-- /header -->
+        <article data-role="content">
+            <form>
+                <ul data-role="listview" class="luntan_line" data-inset="true">
+                <li>
+                    <h1>计划阶段</h1>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </li>
+                <li>
+                    <h3>一、现状之知识</h3>
+                    </br>
+                    <h3>1.学业成就</h3>
+                    </br>
+                    <h3>学科知识:</h3>
+                    
+                </li>
+                <li>
+                    <h3>社会知识:</h3>
+                    
+                </li>
+                <li>
+                    <h3>生活知识:</h3>
+                    
+                </li>
+                <li>
+                    <h3>其他知识:</h3>
+                    
+                </li>
+                <li>
+                    <h3>2.学业态度</h3>
+                    </br>
+                    <h3>学习态度:</h3>
+                    
+                </li>
+                <li>
+                    <h3>学习专注:</h3>
+                    
+                </li>
+                <li>
+                    <h3>略</h3>
+                </li>
+            </ul>
+            <a href="#addplan" class="ui-btn">修改</a>
+            </form>              
+            </div>
+        </article><!-- /content -->
+    </section><!-- /page -->
+
+</body>
+
+</html>

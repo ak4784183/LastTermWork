@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+    <div class="navi">
+      <a href="first.html" class="naviact">首页</a>
+      <a href="luntan.html">论坛</a>
+      <a href="myplan.html"  class="naviact">成长计划</a>
+      <a href="##">跟踪计划</a>
+      <a href="professional.html">专家咨询</a>
+      <a href="thanks.html">鸣谢</a>
+    </div>
+    <div class="owner">
+      <img src="img/head.png">
+      <a href="personal.html">个人中心</a>
+      <a href="login.html">退出</a>
+    </div>
+  </div>
+    <div class="content6">
+      <div class="yellow">
+        <div class="question">
+          <div class="question_title">
+            <h1>我的家庭信息</h1></div>
+          <div class="question_form">
+            <c:forEach items="${list }" var="a">
+      </br>
+      <p><span class="question_span">电话号码：${username}</span>  
+      </p> 
+      
+       <p><span class="question_span">真实姓名：${a.userturename}</span>  
+      </p>
+      
+       <p><span class="question_span">电子邮箱：${a.email}</span>  
+      </p>
+      
+       <p><span class="question_span">微信号码：${a.wechat}</span>  
+      </p>
+      
+      <p><span class="question_span">孩子姓名：${a.child_name}</span>  
+      </p>
+      
+       <p><span class="question_span">亲属关系：${a.withchild}</span>  
+      </p>
+      
+       <p><span class="question_span">孩子性别：${a.child_sex}</span>  
+      </p>
+      
+       <p><span class="question_span">孩子生日：${a.child_birthday}</span>  
+      </p>
+      
+       <p><span class="question_span">孩子类型：${a.child_type}</span>  
+      </p>
+      
+      <p><span class="question_span">就读学校：${a.child_school}</span>  
+      </p>
+      
+      <p><span class="question_span">就读年级：${a.child_grade}</span>  
+      </p>
+      
+      <p><span class="question_span">所在城市：${a.city}</span>  
+      </p>
+      
+      <p><span class="question_span">所在城区：${a.city_proper}</span>  
+      </p>
+      
+       <p><span class="question_span">遭遇的问题：${a.edu_problems}</span>  
+      </p>
+      
+   
+     <a href="${path }/toupdateuser?username=${username}" class="question_sure"><span class="see_span" ">修改</span></a>
+      
+      
+      </br>
+     
+      
+     </br>
+     
+     
+ </c:forEach>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

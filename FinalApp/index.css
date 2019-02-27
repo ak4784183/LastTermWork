@@ -1,0 +1,118 @@
+.login_pic{
+	display: block;
+	margin: 0 auto;
+	width: 10em;
+	height: 10em;
+	border-radius: 50%;
+	border: solid black 1px;
+	margin-top: 4em;
+}
+.login_box{
+	padding-top: 4em;
+	width: 18em;
+	margin: 0 auto;
+}
+a:visited {
+	color: #000;
+}
+.login_button1{
+	display: block;
+    float: left;
+    width: 4em;
+    height: 1em;    
+}
+.login_button2{
+	display: block;
+    float: right;
+    width: 4em;
+    height: 1em;
+}
+.findPwd{
+	display: block;
+	float: right;
+	
+}
+#home .home_pic{
+    margin: 0 auto;
+	width: 5.5em;
+	height: 5.5em;
+	border-radius: 50%;
+	border: solid 0.3em #556FF7;
+	overflow: hidden;
+	background-color: white;
+	transform: rotate(0deg);
+	transition: all 1s;
+}
+
+#home img{
+	display: block;
+	margin: 0 auto;
+	width: 3em;
+	height: 3em;
+    padding-top: 1.2em;
+	background-size: 100%;
+}
+#home .ui-grid-a a{
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+    border-radius: 10px;
+	color: white;
+	font-size: 0.8em;
+	background-color: #FF5810;
+	border: solid 0.08em #696969;
+	text-shadow: 1px 1px 1px #888888;
+	width: 9em;
+	transform: scale(1.0);
+	transition: all 0.5s;
+}
+
+#luntan .luntan_line img,#luntan1 .luntan_line img,#luntan2 .luntan_line img{	
+	height: 4em;
+	background-size: 100%;
+	border-radius: 10%;
+}
+
+#luntan_info .luntan_part img,#profess_info .luntan_part img{
+	width: 5em;height: 5em;border-radius: 50%;
+}
+#luntan_info .luntan_part span,#profess_info .luntan_part span{
+	width: 70%;height: 5em; margin-top: 0.3em;display: block;float: right;
+}
+.luntan_part{
+	margin-top: 1em;
+}
+.luntan_name{
+	text-align: center;
+	display: block;
+	float: left;
+	width: 5em;
+	height: 1.5em;
+}
+.luntan_good{
+	text-align: center;
+	width: 4em;
+	height: 1.5em;
+	float: right;
+	display: block;
+}
+.luntan_date{
+	text-align: center;
+	width: 7em;
+	height: 1.5em;
+	float: right;
+	display: block;
+}
+.luntan_pic{
+	display: block;
+	float: right;
+	width: 1.3em;
+	height: 1.3em;
+}
+#luntan_info .ui-grid-solo .ui-block-a,#profess_info .ui-grid-solo .ui-block-a{
+	border-top: solid 1px grey;
+	margin-bottom: 3em;
+}
+
+

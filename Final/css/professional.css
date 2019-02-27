@@ -1,0 +1,88 @@
+.wenti_title{
+	width: 980px;
+	height: 30px;
+
+	margin-top: 20px;
+
+}
+.wenti_title span{
+	display: block;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #3F51B5;
+	width: 60px;
+	height: 20px;
+}
+.wenti_title #wenti_xuhao{
+	margin-left: 65px;
+}
+.wenti_title #wenti_wenti{
+	margin-left: 190px;
+}
+.wenti_title #wenti_fatieren{
+	margin-left: 345px;
+}
+.wenti_title #wenti_date{
+	margin-left: 80px;
+}
+.wentiline{
+	cursor: pointer;
+	border-radius: 10px;
+	border: solid 2px black;
+	margin-top: 20px;
+	width: 980px;
+	height: 35px;
+	background-color: #E1FFFF;
+	box-shadow: 5px 5px 5px #888888;
+	transform: scale(1.0);
+	transition: all 0.5s;
+}
+.wentiline:hover{
+	cursor: pointer;
+	border-radius: 10px;
+	border: solid 2px black;
+	margin-top: 20px;
+	width: 980px;
+	height: 35px;
+	background-color: #87CEFA;
+	box-shadow: 0px 0px 0px #888888;
+	transform: scale(1.03);
+	transition: all 0.5s;
+}
+.wentiline img{
+	display: block;
+	float: left;
+	margin-left: 14px;
+	margin-top: 5px;
+	width: 25px;
+	height: 25px;
+	background-size: 100%;
+}
+.wentiline span,.wentiline p{
+	display: block;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 7px;
+}
+.wentiline #this_num{
+	height: 25px;
+	width: 55px;
+}
+.wentiline #this_content{
+	height: 25px;
+	width: 600px;
+
+}
+.wentiline #this_name{
+	height: 25px;
+	width: 60px;
+	margin-left: 15px;
+}
+.wentiline #this_date{
+	height: 25px;
+	width: 130px;
+	margin-left: 55px;
+}

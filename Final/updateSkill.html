@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+      <div class="navi">
+        <a href="first.html" class="naviact">首页</a>
+        <a href="luntan.html">论坛</a>
+        <a href="myplan.html">成长计划</a>
+        <a href="##">跟踪计划</a>
+        <a href="professional.html">专家咨询</a>
+        <a href="thanks.html">鸣谢</a>
+        </div>
+      <div class="owner">
+        <img src="img/head.png">
+        <a href="personal.html">个人中心</a>
+        <a href="login.html">退出</a>
+      </div>
+    
+    </div>
+    <div class="content9">
+      <div class="yellow2">
+        <div class="question2">
+          <div class="question_title">
+            <h1>修改技能表</h1>
+          </div>
+         
+          <div class="question_form">
+            <form action="${path }/doupdateskills" method="post" autocomplete="off">
+  <p>
+    <input type="hidden" name="username" value="${username }" /></p>
+  <p>
+    <span class="question_span">阶段：</span>
+    <select name="stage" data-am-selected class="select2">
+      <option class="select1" value="阶段1" <c:if test="${stage == '阶段1' }">selected</c:if>>1</option>
+      <option class="select1" value="阶段2" <c:if test="${stage == '阶段2' }">selected</c:if>>2</option>
+      <option class="select1" value="阶段3" <c:if test="${stage == '阶段3' }">selected</c:if>>3</option>
+      <option class="select1" value="阶段4" <c:if test="${stage == '阶段4' }">selected</c:if>>4</option>
+      <option class="select1" value="阶段5" <c:if test="${stage == '阶段5' }">selected</c:if>>5</option>
+      <option class="select1" value="阶段6" <c:if test="${stage == '阶段6' }">selected</c:if>>6</option>
+      <option class="select1" value="阶段7" <c:if test="${stage == '阶段7' }">selected</c:if>>7</option>
+      <option class="select1" value="阶段8" <c:if test="${stage == '阶段8' }">selected</c:if>>8</option>
+      <option class="select1" value="阶段9" <c:if test="${stage == '阶段9' }">selected</c:if>>9</option>
+      <option class="select1" value="阶段10" <c:if test="${stage == '阶段10' }">selected</c:if>>10</option></select>
+  </p>
+  <p>
+    <span class="question_span">一、注意力与自控力</span>
+    <input type="hidden" name="typeofproblem1" value="一、注意力与自控力" /></p>
+  <p>
+    <span class="question_span">1.时常局促不安，心神不宁</span>
+    <select name="answer_1_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_1_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_1_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_1_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_1_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_1_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">2.注意力不集中或精力分散</span>
+    <select name="answer_2_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_2_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_2_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_2_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_2_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_2_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">3.总是过于活跃（活动量大）</span>
+    <select name="answer_3_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_3_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_3_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_3_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_3_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_3_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">4.做事不假思索</span>
+    <select name="answer_4_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_4_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_4_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_4_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_4_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_4_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">5.完不成任务（虎头蛇尾）</span>
+    <select name="answer_5_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_5_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_5_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_5_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_5_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_5_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">6.易生气激怒</span>
+    <select name="answer_6_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_6_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_6_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_6_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_6_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_6_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">7.不能独立做作业（要人监督）</span>
+    <select name="answer_7_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_7_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_7_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_7_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_7_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_7_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">8.不能在规定的时间内完成作业</span>
+    <select name="answer_8_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_8_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_8_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_8_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_8_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_8_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">9.与人交谈不能关注去听</span>
+    <select name="answer_9_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_9_1 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_9_1 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_9_1 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_9_1 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_9_1 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">10.组织纪律性差</span>
+    <select name="answer_10_1" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_10_1== '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_10_1== '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_10_1== '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_10_1== '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_10_1== '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">二、情绪和行为</span>
+    <input type="hidden" name="typeofproblem2" value="二、情绪和行为" /></p>
+  <p>
+    <span class="question_span">1.经常哭泣</span>
+    <select name="answer_1_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_1_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_1_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_1_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_1_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_1_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">2.易于发怒</span>
+    <select name="answer_2_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_2_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_2_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_2_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_2_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_2_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">3.经常显得无聊</span>
+    <select name="answer_3_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_3_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_3_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_3_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_3_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_3_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">4.经常无故发脾气</span>
+    <select name="answer_4_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_4_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_4_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_4_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_4_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_4_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">5.情绪变化快</span>
+    <select name="answer_5_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_5_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_5_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_5_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_5_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_5_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">6.经常不快乐</span>
+    <select name="answer_6_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_6_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_6_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_6_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_6_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_6_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">7.入睡困难或害怕</span>
+    <select name="answer_7_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_7_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_7_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_7_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_7_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_7_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">8.过度紧张或着急（焦虑）</span>
+    <select name="answer_8_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_8_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_8_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_8_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_8_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_8_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">9.精力不济，常疲乏</span>
+    <select name="answer_9_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_9_2 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_9_2 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_9_2 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_9_2 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_9_2 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">10.有自杀念头</span>
+    <select name="answer_10_2" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_10_2== '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_10_2== '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_10_2== '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_10_2== '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_10_2== '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">三、自尊自信</span>
+    <input type="hidden" name="typeofproblem3" value="三、自尊自信" /></p>
+  <p>
+    <span class="question_span">1.对学习不感兴趣</span>
+    <select name="answer_1_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_1_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_1_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_1_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_1_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_1_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">2.抱怨自己不聪明</span>
+    <select name="answer_2_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_2_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_2_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_2_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_2_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_2_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">3.抱怨学习任务太难</span>
+    <select name="answer_3_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_3_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_3_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_3_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_3_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_3_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">4.过于担忧学习</span>
+    <select name="answer_4_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_4_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_4_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_4_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_4_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_4_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">5.抱怨不被别人喜欢</span>
+    <select name="answer_5_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_5_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_5_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_5_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_5_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_5_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">6.许多学习任务都很难获得成功</span>
+    <select name="answer_6_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_6_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_6_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_6_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_6_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_6_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">7.做作业时轻易就放弃</span>
+    <select name="answer_7_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_7_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_7_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_7_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_7_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_7_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">8.觉得自己不如同学</span>
+    <select name="answer_8_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_8_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_8_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_8_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_8_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_8_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">9.看起来不开心</span>
+    <select name="answer_9_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_9_3 == '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_9_3 == '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_9_3 == '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_9_3 == '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_9_3 == '5' }">selected</c:if>>5</option></select>
+  </p>
+  <p>
+    <span class="question_span">10.感到成功的时候很少</span>
+    <select name="answer_10_3" data-am-selected class="select2">
+      <option class="select1" value="1" <c:if test="${answer_10_3== '1' }">selected</c:if>>1</option>
+      <option class="select1" value="2" <c:if test="${answer_10_3== '2' }">selected</c:if>>2</option>
+      <option class="select1" value="3" <c:if test="${answer_10_3== '3' }">selected</c:if>>3</option>
+      <option class="select1" value="4" <c:if test="${answer_10_3== '4' }">selected</c:if>>4</option>
+      <option class="select1" value="5" <c:if test="${answer_10_3== '5' }">selected</c:if>>5</option></select>
+    <p>
+      <span class="question_span">四、学习环境</span>
+      <input type="hidden" name="typeofproblem4" value="四、学习环境" /></p>
+    <p>
+      <span class="question_span">1.做家庭作业不听从父母的建议</span>
+      <select name="answer_1_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.做家庭作业花的时间很少</span>
+      <select name="answer_2_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.很难遵守做作业的时间表</span>
+      <select name="answer_3_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.没有别人帮助完成作业有困难</span>
+      <select name="answer_4_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.感到家庭学习氛围和生活环境不好</span>
+      <select name="answer_5_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.不愿去上学</span>
+      <select name="answer_6_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.经常反映在学校不舒服</span>
+      <select name="answer_7_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.与同伴相处不融洽</span>
+      <select name="answer_8_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.与老师有隔阂，不愿见老师</span>
+      <select name="answer_9_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_4 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_4 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_4 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_4 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_4 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.不能遵守学校或家庭纪律</span>
+      <select name="answer_10_4" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_4== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_4== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_4== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_4== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_4== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">五、视觉信息加工</span>
+      <input type="hidden" name="typeofproblem5" value="五、视觉信息加工" /></p>
+    <p>
+      <span class="question_span">1.写作业速度慢，时间拖得长</span>
+      <select name="answer_1_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.提笔忘字，对文字或单词缺乏记忆</span>
+      <select name="answer_2_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.写字笔顺颠倒，不正确</span>
+      <select name="answer_3_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.写字看一下写一笔</span>
+      <select name="answer_4_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.写字部首张冠李戴、左右颠倒</span>
+      <select name="answer_5_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.朗读时停顿次数多</span>
+      <select name="answer_6_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.阅读时需要手指协助指示文字方向</span>
+      <select name="answer_7_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.忘记计算过程中的进位和错位</span>
+      <select name="answer_8_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.阅读时逐字阅读、速度慢</span>
+      <select name="answer_9_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_5 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_5 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_5 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_5 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_5 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.朗读时增字减字</span>
+      <select name="answer_10_5" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_5== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_5== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_5== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_5== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_5== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">六、听觉信息加工</span>
+      <input type="hidden" name="typeofproblem6" value="六、听觉信息加工" /></p>
+    <p>
+      <span class="question_span">1.口头语接龙速度慢</span>
+      <select name="answer_1_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.区分发音相似的词或字母有困难</span>
+      <select name="answer_2_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.在阅读课文中读不熟悉的字词有困难</span>
+      <select name="answer_3_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.听写时听不清报读的字词</span>
+      <select name="answer_4_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.听课后，让其复核有困难</span>
+      <select name="answer_5_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.口述回忆已听过的故事有困难</span>
+      <select name="answer_6_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.对老师或家长的指令理解差，无所适从</span>
+      <select name="answer_7_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.在阅读课文中读多音的字词不正确</span>
+      <select name="answer_8_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.口头交谈经常答非所问</span>
+      <select name="answer_9_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_6 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_6 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_6 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_6 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_6 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.持续交谈有困难</span>
+      <select name="answer_10_6" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_6== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_6== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_6== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_6== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_6== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">七、运动技能</span>
+      <input type="hidden" name="typeofproblem7" value="七、运动技能" /></p>
+    <p>
+      <span class="question_span">1.走路姿势难看，经常跌跤</span>
+      <select name="answer_1_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_7== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.跑步姿势怪异，动作不协调</span>
+      <select name="answer_2_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.好动，但缺乏运动技巧</span>
+      <select name="answer_3_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.容易失手打翻或弄倒东西</span>
+      <select name="answer_4_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.常弄脏衣服、书本</span>
+      <select name="answer_5_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.握笔姿势错误、怪异</span>
+      <select name="answer_6_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.写字大小、不易分辨</span>
+      <select name="answer_7_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.写字太重或太轻</span>
+      <select name="answer_8_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.对画画或书法不感兴趣</span>
+      <select name="answer_9_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_7 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_7 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_7 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_7 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_7 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.不能连贯地书写</span>
+      <select name="answer_10_7" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_7== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_7== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_7== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_7== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_7== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">八、语言思维</span>
+      <input type="hidden" name="typeofproblem8" value="八、语言思维" /></p>
+    <p>
+      <span class="question_span">1.语言发展迟缓，常使用幼稚语言</span>
+      <select name="answer_1_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.不能理解指示</span>
+      <select name="answer_2_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.同龄人之间不能持续交流</span>
+      <select name="answer_3_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.经常忘记读过的内容</span>
+      <select name="answer_4_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.常对朗读的内容一知半解</span>
+      <select name="answer_5_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.常对背诵的内容背后不甚其解</span>
+      <select name="answer_6_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.概括归纳或得出结论有困难</span>
+      <select name="answer_7_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.对数学应用题感到困难，不解题意</span>
+      <select name="answer_8_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.不喜欢语文写作的作业</span>
+      <select name="answer_9_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_8 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_8 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_8 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_8 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_8 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.口头交谈的句型简单，对长句理解差</span>
+      <select name="answer_10_8" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_8== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_8== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_8== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_8== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_8== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">九、形象思维</span>
+      <input type="hidden" name="typeofproblem9" value="九、形象思维" /></p>
+    <p>
+      <span class="question_span">1.不善于凭借事物形象解决问难题</span>
+      <select name="answer_1_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.不喜欢玩拼图玩具和拼图文字</span>
+      <select name="answer_2_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.即使晴天也经常错误地分辨时间</span>
+      <select name="answer_3_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.不能以自身为基点分清左右东西南北方位</span>
+      <select name="answer_4_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.以事物形象理解数学概念有困难</span>
+      <select name="answer_5_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.不能回答迅速到达目的地的最短路线</span>
+      <select name="answer_6_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.记叙文表达欠条理性和合理性</span>
+      <select name="answer_7_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.正确使用地图与图表有困难</span>
+      <select name="answer_8_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.不善于讲与其年龄适宜的故事</span>
+      <select name="answer_9_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_9 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_9 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_9 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_9 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_9 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.不理解儿童画画常用表象的象征意义</span>
+      <select name="answer_10_9" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_9== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_9== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_9== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_9== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_9== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">十、思维策略</span>
+      <input type="hidden" name="typeofproblem10" value="十、思维策略" /></p>
+    <p>
+      <span class="question_span">1.没有做计划规划观念</span>
+      <select name="answer_1_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_1_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_1_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_1_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_1_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_1_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">2.分不清完成作业的步骤</span>
+      <select name="answer_2_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_2_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_2_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_2_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_2_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_2_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">3.完成作业时没有全面思考</span>
+      <select name="answer_3_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_3_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_3_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_3_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_3_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_3_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">4.不知道如何做计划修改计划</span>
+      <select name="answer_4_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_4_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_4_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_4_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_4_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_4_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">5.作文构思有困难</span>
+      <select name="answer_5_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_5_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_5_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_5_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_5_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_5_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">6.不会使用替代性计划</span>
+      <select name="answer_6_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_6_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_6_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_6_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_6_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_6_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">7.评价或修改完成的作业有困难</span>
+      <select name="answer_7_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_7_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_7_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_7_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_7_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_7_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">8.选择或使用记忆的策略有困难</span>
+      <select name="answer_8_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_8_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_8_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_8_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_8_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_8_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">9.选择或使用思考的策略有困难</span>
+      <select name="answer_9_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_9_10 == '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_9_10 == '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_9_10 == '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_9_10 == '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_9_10 == '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <span class="question_span">10.学习迁移能力差</span>
+      <select name="answer_10_10" data-am-selected class="select2">
+        <option class="select1" value="1" <c:if test="${answer_10_10== '1' }">selected</c:if>>1</option>
+        <option class="select1" value="2" <c:if test="${answer_10_10== '2' }">selected</c:if>>2</option>
+        <option class="select1" value="3" <c:if test="${answer_10_10== '3' }">selected</c:if>>3</option>
+        <option class="select1" value="4" <c:if test="${answer_10_10== '4' }">selected</c:if>>4</option>
+        <option class="select1" value="5" <c:if test="${answer_10_10== '5' }">selected</c:if>>5</option></select>
+    </p>
+    <p>
+      <button type="submit" class="question_sure">提交</button>
+    <br></form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

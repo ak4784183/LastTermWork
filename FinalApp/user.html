@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+	.ui-icon-myicon1:after {
+            background-image: url("images/icon1.png");  /**你的图片，路径是相对于当前使用文件可以访问到的*/
+       
+            background-size: 18px 18px;
+            
+ }
+ 	.ui-icon-myicon2:after {
+            background-image: url("images/icon2.png");  /**你的图片，路径是相对于当前使用文件可以访问到的*/
+       
+            background-size: 18px 18px;
+            
+ }
+ 	.ui-icon-myicon3:after {
+            background-image: url("images/icon3.png");  /**你的图片，路径是相对于当前使用文件可以访问到的*/
+       
+            background-size: 18px 18px;
+            
+ }
+ 	.ui-icon-myicon4:after {
+            background-image: url("images/icon4.png");  /**你的图片，路径是相对于当前使用文件可以访问到的*/
+       
+            background-size: 18px 18px;
+            
+ }
+ 	.ui-icon-myicon5:after {
+            background-image: url("images/icon5.png");  /**你的图片，路径是相对于当前使用文件可以访问到的*/
+       
+            background-size: 18px 18px;
+            
+ }
+
+ a:visited {color: #000}
+
+.ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+
+</style>
+    <title>Title</title>
+</head>
+<body>
+<!--登陆页面-->
+<div data-role="page" id="pageLogin">
+
+    <div data-role="header">
+        <h1 role="heading">登陆</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <form method="get" action="">
+
+            <div class="ui-field-contain">
+                <label for="name">用户名:</label>
+
+                <input type="text" name="name" id="name">
+
+                <br/>
+
+                <label for="password">密码:</label>
+
+                <input type="password" name="password" id="password">
+                <div style="margin-top: 20%;">
+                    <a href="#tushuliebiao" data-role="button" data-transition="flip" >登录</a>
+                    <a href="#pagetwo" data-role="button" data-transition="flip">注册</a>
+                    <a href="#pagethree" data-role="button" data-transition="flip" >忘记密码？</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div data-role="footer" style="text-align: center"  data-position="fixed">
+        <p>图书管理系统</p>
+    </div>
+
+</div>
+<!--注册页面-->
+<div data-role="page" id="pagetwo" data-theme="a">
+
+    <div data-role="header">
+        <h1>注册</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <form method="get" action="">
+
+            <div class="ui-field-contain">
+                <label for="Rname">用户名:</label>
+
+                <input type="text" name="name" id="Rname">
+
+                <br/>
+
+                <label for="Rpassword">密码:</label>
+
+                <input type="password" name="password" id="Rpassword">
+
+                <br/>
+
+                <label for="Repassword">确认密码:</label>
+
+                <input type="password" name="password" id="Repassword">
+
+                <label for="Resignkey">注册码:</label>
+
+                <input type="text" name="signkey" id="Resignkey">
+
+                <div style="margin-top: 20%;">
+                    <a href="#pageLogin" data-role="button" data-transition="flip" data-direction="reverse">确定注册</a>
+                    <a href="#pageLogin" data-role="button" data-transition="flip" data-direction="reverse">返回登录</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div data-role="footer" style="text-align: center"  data-position="fixed" >
+        <p >图书管理系统</p>
+    </div>
+
+</div>
+
+<!--忘记密码页面-->
+<div data-role="page" id="pagethree" data-theme="a">
+
+    <div data-role="header">
+        <h1>注册</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <form method="get" action="">
+
+            <div class="ui-field-contain">
+                <label for="Rname">用户名:</label>
+
+                <input type="text" name="name" id="Rname">
+
+                <br/>
+
+                <label for="Rpassword">注册码:</label>
+
+                <input type="password" name="password" id="Rpassword">
+
+                <br/>
+
+                <label for="Repassword">重设密码:</label>
+
+                <input type="password" name="password" id="Repassword">
+
+                
+
+                <div style="margin-top: 20%;">
+                    <a href="#pageLogin" data-role="button" data-transition="flip" data-direction="reverse">确定重置</a>
+                    <a href="#pageLogin" data-role="button" data-transition="flip" data-direction="reverse">返回登录</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div data-role="footer" style="text-align: center"  data-position="fixed" >
+        <p >图书管理系统</p>
+    </div>
+
+</div>
+
+<!--图书列表页面-->
+<div data-role="page" id="tushuliebiao" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1>图书列表</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+  
+    <div class="ui-grid-a" >
+
+      <div class="ui-block-a" >
+        
+        <a href="#tushuxiangqing"><img src="images/book01.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族1</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+      </div>
+
+      <div class="ui-block-b" >
+        <a href="#tushuxiangqing"><img src="images/book02.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族2</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+    </div>
+	<div class="ui-block-a" style="margin-top: 15px;" >
+        
+        <a href="#tushuxiangqing"><img src="images/book03.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族3</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+      </div>
+       <div class="ui-block-b" style="margin-top: 15px;">
+        <a href="#"><img src="images/book04.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族4</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+    </div>
+    <div class="ui-block-a" style="margin-top: 15px;" >
+        
+        <a href="#tushuxiangqing"><img src="images/book04.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族4</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+      </div>
+       <div class="ui-block-b" style="margin-top: 15px;">
+        <a href="#"><img src="images/book05.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族5</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">预定</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">借阅</a>
+        <br>
+    </div>
+    
+  </div>
+    
+
+    <div data-role="footer" style="text-align: center; background-color:#fff"  data-position="fixed" >
+    <a href="#tushuliebiao" style="display:inline-block;width:20%;background-color:#fff;border: none;" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-inline ui-nodisc-icon ui-alt-icon">图书列表</a>
+    <a href="#wode" style="display:inline-block;width:20%;background-color:#fff;border: none;" class="ui-btn ui-icon-user ui-btn-icon-top ui-btn-inline ui-nodisc-icon ui-alt-icon">我的</a>
+    
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<!--借阅确认页面-->
+<div data-role="page" id="jieyuequeren">
+  <div data-role="header"  style="background-color:#fff">
+  <h1 class="ul-title" style="margin: 0 auto " ><a href="#tushuliebiao"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>借阅确认</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form method="post" action="">
+      <div class="ui-field-contain">
+               
+        <label for="bday">借阅日期：</label>
+        <input type="date" name="jday" id="jday">
+		<label for="bday">归还日期：</label>
+        <input type="date" name="hday" id="hday">
+        
+      </div>
+     <a href="#tushuliebiao"> <input type="submit" data-inline="true" value="提交"></a>
+    </form>
+  </div>
+</div>
+
+<!--图书详情页面-->
+<div data-role="page" id="tushuxiangqing" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto " ><a href="#tushuliebiao"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>图书详情</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+  
+<img src="images/timg.jpg" style="width: 340px;height: 180px;margin-left: 0px">
+<br>
+<div style="border-bottom: 1px solid red;width: 70px;text-align: center;float: left;" >《龙族》</div>
+
+<div style="border-bottom: 1px solid red;width: 70px;text-align: center;float: right;" >作者:江南</div>
+<br>
+<h1>长篇魔幻小说</h1>
+<div style="padding: 20px 20px 20px 20px;">
+<p>路明非只是一个普通的懵懂高中生，一封来自卡塞尔学院的来信改变了他平淡的人生。在热血与神秘的呼唤下，在爱与梦想的抉择下，他毅然选择了未知。黑色的直升机划过天际，陌生国度的大门向他缓缓开启，平凡的中国小孩走上不平凡的屠龙之路。而遥远的卡塞尔学院却处处透着神秘－－奇怪的课程、搞笑的学长、疯狂的教师、骄傲的同学等。路明非刚刚进入学校就遭遇了无数的怪事。但是，随之而来的挑战也开始了，等级考试、言灵考验、地图搜索。龙的世界也终于在水下露出了神秘面纱。</p></div>
+</div>
+
+
+
+
+</div>
+
+
+ 
+
+
+
+<!--普通用户我的页面-->
+<div data-role="page" id="wode" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1>user1</h1>
+
+    </div>
+ <div data-role="main" class="ui-content">
+    
+    
+    
+    <a href="#wodejieyue" data-theme="c" data-icon="flat-man" data-role="button " class="ui-btn ui-icon-myicon1 ui-btn-icon-left ui-nodisc-icon">我的借阅</a>
+    <a href="#wodeyuding" data-theme="c" data-icon="flat-man" data-role="button" class="ui-btn ui-icon-myicon2 ui-btn-icon-left ui-nodisc-icon">我的预定</a>
+    <a href="#zhanghaoxinxi" data-theme="c" data-icon="flat-man" data-role="button" class="ui-btn ui-icon-myicon3 ui-btn-icon-left ui-nodisc-icon">账号信息</a>
+    <a href="#chakantongzhi" data-theme="c" data-icon="flat-man" data-role="button" class="ui-btn ui-icon-myicon4 ui-btn-icon-left ui-nodisc-icon">查看通知</a>
+    <a href="#xiugaimima" data-theme="c" data-icon="flat-man" data-role="button" class="ui-btn ui-icon-myicon5 ui-btn-icon-left ui-nodisc-icon">修改密码</a>
+    <a href="#pageLogin" data-theme="c" data-icon="flat-man" data-role="button" class="ui-btn ui-icon-back ui-btn-icon-left ui-nodisc-icon ui-alt-icon" >退出登录</a>
+
+     
+     
+   
+  </div>
+
+
+
+    <div data-role="footer" style="text-align: center; background-color:#fff"  data-position="fixed" >
+    <a href="#tushuliebiao" style="display:inline-block;width:20%;background-color:#fff; border: none;" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-inline ui-nodisc-icon ui-alt-icon">图书列表</a>
+    <a href="#wode" style="display:inline-block;width:20%;background-color:#fff;border: none;" class="ui-btn ui-icon-user ui-btn-icon-top ui-btn-inline ui-nodisc-icon ui-alt-icon">我的</a>
+    
+    </div>
+
+</div>
+
+
+
+
+<!--我的借阅页面-->
+<div data-role="page" id="wodejieyue" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto " ><a href="#wode"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>我的借阅</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+  
+    <div class="ui-grid-a" >
+
+      <div class="ui-block-a" >
+        
+        <a href="#tushuxiangqing"><img src="images/book01.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族1</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">归还</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">续借</a>
+        <br>
+      </div>
+
+      <div class="ui-block-b" >
+        <a href="#tushuxiangqing"><img src="images/book02.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族2</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">归还</a>
+        <a href="#jieyuequeren" class="ui-btn ui-corner-all ui-shadow" style="width: 20px;height: 15px;font-size: 1px;float: left;">续借</a>
+        <br>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+
+<!--我的借阅页面-->
+<div data-role="page" id="wodeyuding" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto " ><a href="#wode"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>我的预定</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+  
+    <div class="ui-grid-a" >
+
+      <div class="ui-block-a" >
+        
+        <a href="#tushuxiangqing"><img src="images/book01.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族1</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 145px;height: 15px;font-size: 1px;float: right;">取消预定</a>
+       
+        <br>
+      </div>
+
+      <div class="ui-block-b" >
+        <a href="#tushuxiangqing"><img src="images/book02.jpg" style="width: 100px;height: 120px;"></a> <br>
+        <span style="width: 20px;height: 20px;font-size: 2px">龙族2</span>
+        <br>
+        <span style="width: 20px;height: 20px;font-size: 2px;">作者：江南</span><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" style="width: 145px;height: 15px;font-size: 1px;float: right;">取消预定</a>
+        
+        <br>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+
+<!--账号信息页面-->
+<div data-role="page" id="zhanghaoxinxi" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto " ><a href="#wode"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>账号信息</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+    <form method="post" action="demo_form.php">
+      <div class="ui-field-contain">
+        <label for="fullname">姓名：</label>
+        <input type="text" name="fullname" id="fullname"> 
+        <label for="sex">性别:</label>
+        <select name="sex" id="sex">
+         <option value="man">男</option>
+         <option value="women">女</option>
+      
+        </select> 
+        <label for="fullname">电话：</label>
+        <input type="text" name="fullname" id="fullname">  
+        <label for="fullname">地址：</label>
+        <input type="text" name="fullname" id="fullname">       
+        
+      </div>
+      <a href="#wode"><input type="submit" data-inline="true" value="提交"></a>
+    </form>
+  </div>
+
+</div>
+<!--查看通知页面-->
+<div data-role="page" id="chakantongzhi" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto ;color: orange" ><a href="#wode"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>查看通知</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+    <div style="padding: 20px 20px 20px 20px;">
+<p>明日闭馆</p></div>
+</div>
+  </div>
+
+<!--修改密码页面-->
+<div data-role="page" id="xiugaimima" data-theme="a">
+
+    <div data-role="header" style="background-color:#fff">
+        <h1 class="ul-title" style="margin: 0 auto " ><a href="#wode"  class=" ui-icon-arrow-l ui-btn-icon-left "></a>修改密码</h1>
+
+    </div>
+<div data-role="main" class="ui-content">
+    <form method="post" action="demo_form.php">
+      <div class="ui-field-contain">
+        <label for="password1">原密码：</label>
+        <input type="password" name="password1" id="password1"> 
+       
+         
+        <label for="password2">新密码：</label>
+        <input type="password" name="password2" id="password2">  
+        <label for="password3">确定密码：</label>
+        <input type="password" name="password3" id="password3">       
+        
+      </div>
+      <a href="#wode"><input type="submit" data-inline="true" value="提交"></a>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

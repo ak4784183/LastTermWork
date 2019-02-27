@@ -1,0 +1,112 @@
+#personal .title{
+			width: 400px;
+			height: 120px;		
+			margin: 0 auto;
+			padding-top: 30px;
+			text-align: center;
+		}
+		#personal .title .huxue{
+			font-size: 40px;
+			font-weight: bold;
+			transform: scale(1.0);
+			transition: all 1s;
+		}
+		#personal .title .huxue:hover{
+            font-size: 40px;
+			font-weight: bold;
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+		#personal .title .yingwen{
+			font-family: serif;
+			transform: scale(1.0);
+			transition: all 1s;
+		}
+		#personal .title .yingwen:hover{
+			font-family: serif;
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+
+		#personal .btn1{
+			margin: 0 auto;
+			padding-top: 30px;
+			height: 280px;
+		}
+		#personal .btn1 .part{
+            margin-left: 125px;
+			float: left;
+			margin-top: 20px;
+			width: 100px;
+			height: 150px;
+			
+		}
+		#personal .btn1 .part .picbtn{
+			padding-right: 50px;
+			margin-top: 140px;
+			width: 100px;
+			height: 50px;
+		
+		}
+		#personal .btn1 .part .picbtn a{
+			
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+			color: white;
+			width: 130px;
+			height: 24px;
+			background-color: #FF5810;
+			border-radius: 5px;
+			text-align: center;
+			border: solid 1px grey;
+			transform: scale(1.0);
+			transition: all 0.5s;
+			box-shadow: 2px 2px 1px #888888;
+
+		}
+		#personal .btn1 .part .picbtn a:hover{
+			
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+			color: black;
+			width: 130px;
+			height: 24px;
+			background-color: white;
+			border-radius: 5px;
+			text-align: center;
+			border: solid 3px lightgrey;
+			transform: scale(1.3);
+			transition: all 0.5s;
+			box-shadow: 0px 0px 0px #888888;
+		}
+
+		.btn1 .pic1{
+			margin-left: 35px;
+			float: left;
+			width: 50px;
+			height: 50px;
+			background-color: white;
+            border-radius: 50%;
+            border: solid 5px #FF5F00;
+            transform: scale(1.0);
+            transition: all 1s;
+		}
+		.btn1 .pic1:hover{
+			float: left;
+			width: 50px;
+			height: 50px;
+			background-color: white;
+            border-radius: 50%;
+            border: solid 5px #556FF7;
+            transform: scale(1.3);
+            transition: all 1s;
+		}
+		.btn1 .pic1 img{
+			width: 30px;
+			height: 30px;
+			font-size: 100%;
+			margin-left: 10px;
+			margin-top: 10px;
+        }

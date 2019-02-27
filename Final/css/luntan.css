@@ -1,0 +1,333 @@
+#luntan{
+	width: 1300px;
+	height: 1200px;
+	padding-top: 30px;
+	margin: 0 auto;
+	
+}
+
+#find{
+	padding-top: 30px;
+	margin: 0 auto;
+	width: 470px;
+	height: 50px;
+}
+#find input{
+	width: 320px;
+	height: 30px;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+#find button{
+	margin-left: 3px;
+	width: 60px;
+	height: 30px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #536EFF;
+	color: white;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #888888;
+}
+#find a{
+	margin-left: 3px;
+	box-shadow: 1px 1px 1px #888888;
+	width: 70px;
+	height: 28px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: white;
+	color: #536EFF;
+	cursor: pointer;
+}
+#find a span{
+	padding-left: 5px;
+	padding-top: 2px;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+.luntan{
+	width: 1300px;
+	height: 1200px;
+	/*background-color: rgba(250,250,210,0.8);
+	box-shadow: 8px 8px 10px #888888;
+	border: solid 2.5px black;*/
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	
+	border-radius: 20px;
+	
+}
+#tiezi{
+	margin-top: -20px;
+	float: left;
+	margin-left: 30px;
+    border-radius: 20px;
+	width: 1025px;
+	height: 1190px;
+	background-color: rgba(250,250,210,0.8);
+	box-shadow: 8px 8px 10px #888888;
+	border: solid 2.5px black;
+
+}
+.tiezi{
+	margin-left: 22px;
+	float: left;
+	width: 980px;
+	height: 1140px;
+}
+.part3{
+	margin-top: 30px;
+	width: 980px;
+	height: 210px;
+	background-color: white;
+	border: solid 2px lightgrey;
+	box-shadow: 5px 5px 5px #888888;
+    border-radius: 10px;
+    transform: scale(1.0);
+	transition: all 0.3s;
+}
+.part3:hover{
+	margin-top: 20px;
+	width: 980px;
+	height: 210px;
+	background-color: white;
+	border: solid 2px lightgrey;
+	box-shadow: 0px 0px 0px #888888;
+    border-radius: 10px;
+    transform: scale(0.985);
+	transition: all 0.3s;
+}
+.content_t{
+	float: left;
+	margin-top: 20px;
+	width: 980px;
+	height: 152px;
+}
+
+.title_t{
+	width: 980px;
+	height: 20px;
+	float: left;
+
+}
+.title_t h2{
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+
+	cursor: pointer;
+}
+.pic_t{
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 220px;
+	height: 120px;
+	border: solid 1px lightgrey;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 3px 3px 3px #888888;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.pic_t:hover{
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 220px;
+	height: 120px;
+	border: solid 1px lightgrey;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px #888888;
+	transition: all 0.2s;
+}
+.pic_t img{
+	width: 220px;
+	height: 120px;
+
+}
+.liaotian{
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 650px;
+	height: 107px;
+	float: left;
+}
+.liaotian span,.liaotian p{
+	margin-top: 5px;
+    display: block;
+    float: left;
+	font-size: 13px;
+	color: black;
+}
+
+.date_t{
+	float: right;
+}
+.date_t span{
+
+	margin-right: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.haoping{
+	float: right;
+	margin-right: 20px;
+	width: 110px;
+	height: 20px;	
+}
+.haoping img{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+
+	margin-right: 10px;
+	transform: scale(1.0);
+	transition: all 0.1s;
+}
+.haoping img:hover{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 10px;
+	transform: scale(1.2);
+	transition: all 0.1s;
+
+}
+.haoping span{
+
+	display: block;
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 37px;
+}
+
+#page{
+	width: 600px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 160px;
+
+}
+#page .page{
+	width: 320px;
+	height: 50px;
+	margin: 0 auto;
+
+}
+
+#page .page a{
+	float: left;
+	width: 25px;
+	height: 25px;
+	display: block;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50%;
+	padding-left: 10px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+}
+#page .page a:hover{
+	float: left;
+	width: 25px;
+	height: 25px;
+	display: block;
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 50%;
+	padding-left: 10px;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+#page .page .active{
+	color: #FF9800;
+	transform: scale(1.0);
+    transition: all 0.5s;
+}
+#page .page .active:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+	color: #FF9800;
+}
+
+#fenlei{
+	margin-top: -20px;
+	float: left;
+	margin-left: 25px;
+	width: 180px;
+	height: 282px;
+    background-color: rgba(250,250,210,0.8);
+	border: solid 2px black;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px #888888;
+}
+#fenlei .fenlei{
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 150px;
+	height: 300px;
+	
+}
+
+#fenlei .fenlei a{
+	display: block;
+    font-size: 16px;
+    font-weight: bold;
+	width: 130px;
+	height: 30px;
+    color: black;
+	margin-top: 20px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 1px lightgrey;
+	box-shadow: 2px 2px 2px #888888;
+	transform: scale(1.0);
+    transition: all 0.5s;
+}
+#fenlei .fenlei a:hover{
+	display: block;
+    font-size: 16px;
+    font-weight: bold;
+	width: 130px;
+	height: 30px;
+    color: black;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #FF9800;
+	border-radius: 10px;
+	border: solid 1px lightgrey;
+	box-shadow: 0px 0px 0px #888888;
+	transform: scale(1.2);
+    transition: all 0.5s;
+    color: white;
+}
+#fenlei .fenlei .active{
+	background-color: #FF9800;
+	transform: scale(1.0);
+    transition: all 0.5s;
+    color: white;
+}
+
+}
+#fenlei .fenlei .active:hover{
+	 transform: scale(1.15);
+    transition: all 0.5s;
+	
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+      <div class="navi">
+        <a href="first.html" class="naviact">首页</a>
+        <a href="luntan.html">论坛</a>
+        <a href="myplan.html">成长计划</a>
+        <a href="##">跟踪计划</a>
+        <a href="professional.html">专家咨询</a>
+        <a href="thanks.html">鸣谢</a>
+        </div>
+      <div class="owner">
+        <img src="img/head.png">
+        <a href="personal.html">个人中心</a>
+        <a href="login.html">退出</a>
+      </div>
+    
+    </div>
+    <div class="content7">
+      <div class="yellow1">
+        <div class="question1">
+          <div class="question_title">
+            <h1>修改规划表</h1></div>
+          <div class="question_form">
+            <form  action="${path }/doplan"  method="post" autocomplete="off">
+
+      </br>
+       <input type="hidden" name="username" value="${username }" />
+       
+       
+         <p>
+
+    </p>
+    <p>
+      <span class="question_span">阶段：</span>
+        
+        <select name = "stage" data-am-selected class="select2">
+                  <option class="select1" value="阶段1" selected >1</option>
+                  <option class="select1" value="阶段2"  >2</option>
+                  <option class="select1" value="阶段3"  >3</option>
+                  <option class="select1" value="阶段4" >4</option>
+                  <option class="select1" value="阶段5"  >5</option>
+                  <option class="select1" value="阶段6"  >6</option>
+                  <option class="select1" value="阶段7"  >7</option>
+                  <option class="select1" value="阶段8"  >8</option>
+                  <option class="select1" value="阶段9"  >9</option>
+                  <option class="select1" value="阶段10"  >10</option>
+      </select>
+      </p>
+      <p>
+    <span class="question_span">一、现状之知识</span>
+    </p>
+     <p>
+    <span class="question_span">1.学业成就</span>
+    </p>
+      <p>
+      <span class="question_span">学科知识：</span>
+       
+       </p>
+        </p>
+                    <textarea rows="4" cols="30" name="study_subject" placeholder="请在此输入最近一学期所有科目期末考试成绩:"></textarea><br></br>
+<p>
+      <p>
+      <span class="question_span">社会知识：</span>
+            
+      
+       <select name = "study_sociology" data-am-selected class="select2">
+                  <option class="select1" value="了解"  >了解 </option>
+                  <option class="select1" value="理解"  >理解</option>
+                  <option class="select1" value="运用"  >运用</option>
+                  <option class="select1" value="分析"  >分析</option>
+      </select>
+      </p>
+      <p>
+      <span class="question_span">生活知识：</span>
+       
+         <select name = "study_life" data-am-selected class="select2">
+                  <option class="select1" value="认知"  >认知 </option>
+                  <option class="select1" value="习惯"  >习惯</option>
+                  <option class="select1" value="操作"  >操作</option>
+                  <option class="select1" value="实践"  >实践</option>
+      </select>
+      </p>
+      <p>
+      <span class="question_span">其他知识：</span>
+      
+       
+        
+         <select name = "study_other" data-am-selected class="select2">
+                  <option class="select1" value="弱"  >弱 </option>
+                  <option class="select1" value="一般"  >一般</option>
+                  <option class="select1" value="强"  >强</option>
+                  
+      </select>
+      </p>
+      
+       <p>
+    <span class="question_span">2.学业态度</span>
+    </p>
+      <p>
+       <span class="question_span">学习态度：</span>
+        <select name = "study_attitude" data-am-selected class="select2">
+                  <option class="select1" value="认真"  >认真 </option>
+                  <option class="select1" value="一般"  >一般</option>
+                  <option class="select1" value="不认真"  >不认真</option>
+      </select>
+       </p>
+      <p>
+      <span class="question_span">学习专注：</span>
+      <select name = "study_attention" data-am-selected class="select2">
+                  <option class="select1" value="强"  >强 </option>
+                  <option class="select1" value="一般"  >一般</option>
+                  <option class="select1" value="弱"  >弱</option>
+      </select>
+     
+      </p>
+         <p>
+            <p>
+              <span class="question_span">3.学习习惯</span></p>
+            <p>
+              <span class="question_span">作业情况：</span>
+              <select name="study_homework" data-am-selected class="select2">
+                <option class="select1" value="自觉完成">自觉完成</option>
+                <option class="select1" value="催促完成">催促完成</option>
+                <option class="select1" value="做作业烦躁">做作业烦躁</option></select>
+            </p>
+            <p>
+              <span class="question_span">课前预习：</span>
+              <select name="study_preview" data-am-selected class="select2">
+                <option class="select1" value="经常">经常</option>
+                <option class="select1" value="偶尔">偶尔</option>
+                <option class="select1" value="从不">从不</option></select>
+            </p>
+            <p>
+              <span class="question_span">课后复习：</span>
+              <select name="study_review" data-am-selected class="select2">
+                <option class="select1" value="经常">经常</option>
+                <option class="select1" value="偶尔">偶尔</option>
+                <option class="select1" value="从不">从不</option></select>
+            </p>
+            <p>
+              <span class="question_span">二、现状之素质</span></p>
+            <p>
+              <span class="question_span">1.未来梦想</span></p>
+            <p>
+              <span class="question_span">兴趣爱好：</span>
+              <select name="quality_hobby" data-am-selected class="select2">
+                <option class="select1" value="游戏">游戏</option>
+                <option class="select1" value="体育">体育</option>
+                <option class="select1" value="文艺">文艺</option>
+                <option class="select1" value="科技">科技</option>
+                <option class="select1" value="其他">其他</option></select>
+            </p>
+            <p>
+              <span class="question_span">信息特长：</span>
+              <select name="quality_specialty" data-am-selected class="select2">
+                <option class="select1" value="单任务">单任务</option>
+                <option class="select1" value="多任务">多任务</option>
+                <option class="select1" value="理解">理解</option>
+                <option class="select1" value="处理">处理</option></select>
+            </p>
+            <p>
+              <span class="question_span">格局视野：</span>
+              <select name="quality_view" data-am-selected class="select2">
+                <option class="select1" value="全球">全球</option>
+                <option class="select1" value="国际">国际</option>
+                <option class="select1" value="国内">国内</option>
+                <option class="select1" value="外省">外省</option>
+                <option class="select1" value="本地">本地</option></select>
+            </p>
+            <p>
+              <span class="question_span">2.心理素质</span></p>
+            <p>
+              <span class="question_span">情绪：</span>
+              <select name="quality_emotion" data-am-selected class="select2">
+                <option class="select1" value="稳定">稳定</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="不稳定">不稳定</option></select>
+            </p>
+            <p>
+              <span class="question_span">性格：</span>
+              <select name="quality_character" data-am-selected class="select2">
+                <option class="select1" value="开朗">开朗</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="内向">内向</option></select>
+            </p>
+            <p>
+              <span class="question_span">合群性：</span>
+              <select name="quality_gregarious" data-am-selected class="select2">
+                <option class="select1" value="很好">很好</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="不好">不好</option></select>
+            </p>
+            <p>
+              <span class="question_span">3.协调关系</span></p>
+            <p>
+              <span class="question_span">同学关系：</span>
+              <select name="quality_classmate" data-am-selected class="select2">
+                <option class="select1" value="好">好</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="不好">不好</option></select>
+            </p>
+            <p>
+              <span class="question_span">师生关系：</span>
+              <select name="quality_teacher" data-am-selected class="select2">
+                <option class="select1" value="好">好</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="不好">不好</option></select>
+            </p>
+            <p>
+              <span class="question_span">与父母关系：</span>
+              <select name="quality_parent" data-am-selected class="select2">
+                <option class="select1" value="好">好</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="不好">不好</option></select>
+            </p>
+            <p>
+              <span class="question_span">三、现状之能力</span></p>
+            <p>
+              <span class="question_span">1.基本能力</span></p>
+            <p>
+              <span class="question_span">口头表达：</span>
+              <select name="ability_olanguage" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">书面表达：</span>
+              <select name="ability_write" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">组织协调：</span>
+              <select name="ability_orgcoo" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">2.创新能力</span></p>
+            <p>
+              <span class="question_span">学科融合：</span>
+              <select name="ability_fuse" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">跨界思维：</span>
+              <select name="ability_tranthink" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">问题解决：</span>
+              <select name="ability_solve" data-am-selected class="select2">
+                <option class="select1" value="强">强</option>
+                <option class="select1" value="一般">一般</option>
+                <option class="select1" value="弱">弱</option></select>
+            </p>
+            <p>
+              <span class="question_span">3.成长体验</span></p>
+            <p>
+              <span class="question_span">阅读经历：</span>
+              <select name="ability_read" data-am-selected class="select2">
+                <option class="select1" value="经常">经常</option>
+                <option class="select1" value="偶尔">偶尔</option>
+                <option class="select1" value="不阅读">不阅读</option></select>
+            </p>
+            <p>
+              <span class="question_span">社会实践：</span>
+              <select name="ability_practice" data-am-selected class="select2">
+                <option class="select1" value="经常参加">经常参加</option>
+                <option class="select1" value="偶尔参加">偶尔参加</option>
+                <option class="select1" value="从未参加">从未参加</option></select>
+            </p>
+            <p>
+              <span class="question_span">游学经历：</span>
+              <select name="ability_studytour" data-am-selected class="select2">
+                <option class="select1" value="经常参加">经常参加</option>
+                <option class="select1" value="偶尔参加">偶尔参加</option>
+                <option class="select1" value="从未参加">从未参加</option></select>
+            </p>
+            <p>
+              <span class="question_span">目标：</span></p>
+            <textarea rows="4" cols="30" name="target" placeholder="请在此输入您的目标期望:"></textarea>
+            <br></br>
+            <p>
+              <span class="question_span">措施之孩子：</span></p>
+            <textarea rows="4" cols="30" name="measures_children" placeholder="请在此输入学习营中得到的措施:"></textarea>
+            <br></br>
+            <p>
+              <span class="question_span">措施之父母（亲属）：</span></p>
+            <textarea rows="4" cols="30" name="measures_parent" placeholder="请在此输入学习营中得到的措施:"></textarea>
+            <br></br>
+            <p>
+              <span class="question_span">措施之老师：</span></p>
+            <textarea rows="4" cols="30" name="measures_teacher" placeholder="请在此输入学习营中得到的措施:"></textarea>
+            <br></br>
+            <p>
+              <span class="question_span">评估与反思：</span></p>
+            <textarea rows="4" cols="30" name="evaref" placeholder="请在此输入学习营中得到的措施:"></textarea>
+            <br></br>
+            <p>
+              <span class="question_span">规划开始时间：</span>
+              <input class="select2" type="date" name="plantime" required autofocus/></p>
+            <div class="section-subtitle">规划开始时间必须填写</div>
+            <p>
+              <span class="question_span">规划结束时间：</span>
+              <input class="select2" type="date" name="overtime" required autofocus/></p>
+            <div class="section-subtitle">规划结束时间必须填写</div>
+            <p>
+              <button type="submit" class="question_sure">确认修改</button></p>
+            <br></form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

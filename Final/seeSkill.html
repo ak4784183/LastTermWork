@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+    <div class="navi">
+      <a href="first.html" class="naviact">首页</a>
+      <a href="luntan.html">论坛</a>
+      <a href="myplan.html"  class="naviact">成长计划</a>
+      <a href="##">跟踪计划</a>
+      <a href="professional.html">专家咨询</a>
+      <a href="thanks.html">鸣谢</a>
+    </div>
+    <div class="owner">
+      <img src="img/head.png">
+      <a href="personal.html">个人中心</a>
+      <a href="login.html">退出</a>
+    </div>
+  </div>
+    <div class="content6">
+      <div class="yellow">
+        <div class="question">
+          <div class="question_title">
+            <h1>技能表查询</h1></div>
+          <div class="question_form">
+             <form  action="${path }/dosearchskills"  method="get" autocomplete="off">
+
+      <p>
+        <input class="select2" type="hidden" name="username" value="${username }" required autofocus/>
+      </p>
+      </br>
+     
+     
+    <p>
+       <span class="question_span">阶段：</span>
+        
+        <select name = "stage" data-am-selected class="select2">
+                  <option class="select1" value="阶段1" <c:if test="${stage == '阶段1' }">selected</c:if> >1</option>
+                  <option class="select1" value="阶段2" <c:if test="${stage == '阶段2' }">selected</c:if> >2</option>
+                  <option class="select1" value="阶段3" <c:if test="${stage == '阶段3' }">selected</c:if> >3</option>
+                  <option class="select1" value="阶段4" <c:if test="${stage == '阶段4' }">selected</c:if> >4</option>
+                  <option class="select1" value="阶段5" <c:if test="${stage == '阶段5' }">selected</c:if> >5</option>
+                  <option class="select1" value="阶段6" <c:if test="${stage == '阶段6' }">selected</c:if> >6</option>
+                  <option class="select1" value="阶段7" <c:if test="${stage == '阶段7' }">selected</c:if> >7</option>
+                  <option class="select1" value="阶段8" <c:if test="${stage == '阶段8' }">selected</c:if> >8</option>
+                  <option class="select1" value="阶段9" <c:if test="${stage == '阶段9' }">selected</c:if> >9</option>
+                  <option class="select1" value="阶段10" <c:if test="${stage == '阶段10' }">selected</c:if> >10</option>
+      </select>
+      
+      </p>
+      
+     </br>
+      <p>
+        <button type="submit" class="question_sure">查询</button>
+        
+        
+      </p> 
+     
+    </form>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <div class="question_title"><h1>技能表查询结果</h1></div>
+    <p><span class="question_span">阶段：${stage}</span>  
+      </p> 
+    <c:forEach items="${list }" var="a" varStatus="loop">
+   
+      </br>
+  
+      <p><span class="question_span">问题类型：${a.typeofproblem}</span>  
+      </p> 
+      
+      <p><span class="question_span"> ${list2[loop.count-1].question_1 }：${a.answer_1 }</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_2 }： ${a.answer_2}</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_3 }： ${a.answer_3}</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_4 }： ${a.answer_4}</span>  
+      </p>
+      
+      <p><span class="question_span">${list2[loop.count-1].question_5 }： ${a.answer_5}</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_6 }： ${a.answer_6}</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_7 }： ${a.answer_7}</span>  
+      </p>
+      
+       <p><span class="question_span">${list2[loop.count-1].question_8 }： ${a.answer_8}</span>  
+      </p>
+      
+      <p><span class="question_span">${list2[loop.count-1].question_9 }： ${a.answer_9}</span>  
+      </p>
+      
+      <p><span class="question_span">${list2[loop.count-1].question_10 }： ${a.answer_10}</span>  
+      </p>
+      
+      <p><span class="question_span">时间：${a.time}</span>  
+      </p>
+    </c:forEach>
+  </br>
+      
+   
+      
+      
+      
+      
+     <a href="${path }/toupdateskill?username=${username}&stage=${stage}&typeofproblem=${a.typeofproblem}&answer_1=${a.answer_1}&answer_2=${a.answer_2}&answer_3=${a.answer_3}&answer_4=${a.answer_4}&answer_5=${a.answer_5}&answer_6=${a.answer_6}&answer_7=${a.answer_7}&answer_8=${a.answer_8}&answer_9=${a.answer_9}&answer_10=${a.answer_10}" class="question_sure"><span class="see_span">修改</span></a>
+      
+     </br>
+     </br>
+   </c:forEach>   
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

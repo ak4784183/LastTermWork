@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+    <div class="navi">
+      <a href="first.html" class="naviact">首页</a>
+      <a href="luntan.html">论坛</a>
+      <a href="myplan.html"  class="naviact">成长计划</a>
+      <a href="##">跟踪计划</a>
+      <a href="professional.html">专家咨询</a>
+      <a href="thanks.html">鸣谢</a>
+    </div>
+    <div class="owner">
+      <img src="img/head.png">
+      <a href="personal.html">个人中心</a>
+      <a href="login.html">退出</a>
+    </div>
+  </div>
+    <div class="content6">
+      <div class="yellow3">
+        <div class="question3">
+          <div class="question_title">
+            <h1>规划表查询</h1></div>
+          <div class="question_form">
+            <c:forEach items="${list }" var="a">
+      </br>
+    
+      
+      <p><span class="question_span">计划开始时间：${a.plantime}</span>  
+      </p> 
+      
+      <p><span class="question_span">计划结束时间：${a.overtime}</span>  
+      </p> 
+      
+      <p><span class="question_span">计划阶段：${stage}</span>  
+      </p>
+      
+      <p><span class="question_span">学业之学科成绩：${a.study_subject}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之生活知识：${a.study_life}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之社会知识：${a.study_sociology}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之其他知识：${a.study_other}</span>  
+      </p>
+      
+      <p><span class="question_span">学业之学习态度：${a.study_attitude}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之专注能力：${a.study_attention}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之作业情况：${a.study_homework}</span>  
+      </p>
+      
+       <p><span class="question_span">学业之预习情况：${a.study_preview}</span>  
+      </p>
+      
+      <p><span class="question_span">学业之复习情况：${a.study_review}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之兴趣爱好：${a.quality_hobby}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之能力特长：${a.quality_specialty}</span>  
+      </p>
+      
+       <p><span class="question_span">素质之格局视野：${a.quality_view}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之情绪状况：${a.quality_emotion}</span>  
+      </p>
+      
+       <p><span class="question_span">素质之性格状况：${a.quality_character}</span>  
+      </p>
+      
+       <p><span class="question_span">素质之合群情况：${a.quality_gregarious}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之同学关系：${a.quality_classmate}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之师生关系：${a.quality_teacher}</span>  
+      </p>
+      
+      <p><span class="question_span">素质之父母关系：${a.quality_parent}</span>  
+      </p>
+      
+       <p><span class="question_span">能力之口语表达：${a.ability_olanguage}</span>  
+      </p>
+      
+       <p><span class="question_span">能力之书面表达：${a.ability_write}</span>  
+      </p>
+      
+       <p><span class="question_span">能力之组织协调：${a.ability_orgcoo}</span>  
+      </p>
+      
+      <p><span class="question_span">能力之学科融合：${a.ability_fuse}</span>  
+      </p>
+      
+      <p><span class="question_span">能力之跨界思维：${a.ability_tranthink}</span>  
+      </p>
+      
+      <p><span class="question_span">能力之解决问题：${a.ability_solve}</span>  
+      </p>
+      
+      <p><span class="question_span">能力之阅读经历：${a.ability_read}</span>  
+      </p>
+      
+        <p><span class="question_span">能力之社会实践：${a.ability_practice}</span>  
+      </p>
+      
+       <p><span class="question_span">能力之游学经历：${a.ability_studytour}</span>  
+      </p>
+      </br>
+      </br>
+      <span class="question_span">目标：${a.target}</span><br></br>
+      </br>
+      <span class="question_span">措施之孩子：${a.measures_children}</span><br></br>
+      </br>
+       <span class="question_span">措施之父母：${a.measures_parent}</span><br></br>
+       </br>
+       <span class="question_span">措施之老师：${a.measures_teacher}</span><br></br>
+       </br>
+        <span class="question_span">评估与反思：${a.evaref}</span><br>
+      </br>
+      
+      
+      </br>
+ <a class="question_sure" href="${path }/toupdateplan?username=${username}&stage=${stage}&plantime=${a.plantime}&overtime=${a.overtime}&study_subject=${a.study_subject}&study_life=${a.study_life}&study_sociology=${a.study_sociology}&study_other=${a.study_other}&study_attitude=${a.study_attitude}&study_attention=${a.study_attention}&study_homework=${a.study_homework}&study_preview=${a.study_preview}&study_review=${a.study_review}&quality_hobby=${a.quality_hobby}&quality_specialty=${a.quality_specialty}&quality_view=${a.quality_view}&quality_emotion=${a.quality_emotion}&quality_character=${a.quality_character}&quality_gregarious=${a.quality_gregarious}&quality_classmate=${a.quality_classmate}&quality_teacher=${a.quality_teacher}&quality_parent=${a.quality_parent}&ability_olanguage=${a.ability_olanguage}&ability_write=${a.ability_write}&ability_orgcoo=${a.ability_orgcoo}&ability_fuse=${a.ability_fuse}&ability_tranthink=${a.ability_tranthink}&ability_solve=${a.ability_solve}&ability_read=${a.ability_read}&ability_practice=${a.ability_practice}&ability_studytour=${a.ability_studytour}&target=${a.target}&measures_children=${a.measures_children}&measures_parent=${a.measures_parent}&measures_teacher=${a.measures_teacher}&evaref=${a.evaref}"><span class="see_span">修改</span></a>
+     </br>
+</c:forEach>
+   
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

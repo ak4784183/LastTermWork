@@ -1,0 +1,314 @@
+        .footer{
+			height: 160px;
+			border-top: solid 1px grey;		
+			background-color: rgba(254,161,167,0.6);
+			box-shadow: -1px -1px 1px #888888;
+		}
+
+		.talk{
+			float: left;
+			margin-left: 40px;
+			width: 500px;
+			height: 130px;
+		
+		}
+		.this{
+			margin-left: 110px;
+			padding-top: 10px;
+		}
+		.talkus{
+			width: 500px;
+			height: 100px;
+			
+			margin-top: 10px;
+			font-size: 12px;
+		}
+		.talkus .first{
+			margin-top: 30px;
+			width: 500px;
+			height: 50px;
+			
+
+		}
+		.talkus .first span{
+
+			margin-left: 110px;
+			float: left;
+			color: black;
+			font-size: 12px;
+			font-weight: bold;
+			cursor: pointer;
+			transform: scale(1.0);
+			transition: all 0.3s;
+			text-shadow: 0.5px 0.5px 1px white;
+		}
+		.talkus .first span:hover{
+
+			margin-left: 110px;
+			float: left;
+			color: white;
+			font-size: 12px;
+			font-weight: bold;
+			transform: scale(1.05);
+			transition: all 0.3s;
+		}
+		.talkus .second{
+			
+			width: 500px;
+			height: 50px;
+			
+		}
+		.talkus .second span{
+			cursor: pointer;
+			margin-left: 110px;
+			float: left;
+			font-size: 12px;
+			font-weight: bold;
+			transform: scale(1.0);
+			transition: all 0.3s;
+			text-shadow: 0.5px 0.5px 1px white;
+		}
+		.talkus .second span:hover{
+			cursor: pointer;
+			margin-left: 110px;
+			float: left;
+			font-size: 12px;
+			color: white;
+			font-weight: bold;
+			transform: scale(1.05);
+			transition: all 0.3s;
+		}
+		.show{
+			float: left;
+			margin-top: 20px;
+			height: 120px;
+			width: 470px;
+			
+			border-left: solid 1px grey;
+		}
+
+		.ewm{
+			float: left;
+			margin-top: 8px;
+			margin-left: 60px;
+			height: 120px;
+			width: 80px;
+			
+		}
+		.ewm img{
+			cursor: pointer;
+			height: 70px;
+			width: 70px;
+		}
+		.ewm img:hover{
+		
+			height: 70px;
+			width: 70px;
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+		.ewm p{
+            margin: 0 auto;
+			font-size: 12px;
+			font-weight: bold;
+			width: 70px;
+			text-shadow: 0.5px 0.5px 1px white;
+			transform: scale(1.0);
+			transition: all 0.3s;
+			cursor: pointer;
+		}
+		.ewm p:hover{
+            margin: 0 auto;
+			font-size: 12px;
+			font-weight: bold;
+			width: 70px;
+			color: white;
+			transform: scale(1.0);
+			transition: all 0.3s;
+		}
+		.jigou{
+			float: left;
+			padding-left: 20px;
+			width: 300px;
+			height: 120px;
+		}
+		.jigou #this{
+			margin: 0 auto;
+            width: 100px;
+			font-size: 20px;
+			font-weight: bold;
+			text-shadow: 0.5px 0.5px 1px white;
+		}
+		.jigou .this{
+			margin: 0 auto;
+			cursor: pointer;
+			width: 200px;
+			height: 20px;
+			border-radius: 10px;
+			border: solid 2px black;
+			text-align: center;
+            background-color: #FFFACD;
+            box-shadow: 1px 1px 1px #888888;
+			margin-top: 10px;
+			transition: all 0.5s;
+		}
+		.jigou .this:hover{
+			margin: 0 auto;
+			cursor: pointer;
+			width: 200px;
+			height: 20px;
+			border-radius: 10px;
+			border: solid 2px black;
+			text-align: center;
+            background-color: #FFFACD;
+			margin-top: 10px;
+			transform: scale(1.1);
+			transition: all 0.5s;
+		}
+		.jigou .this p{
+			margin-top: -7px;
+			font-size: 15px;
+			font-weight: bold; 
+
+			text-shadow: 0.5px 0.5px 1px white;
+		}
+		.weixin{	
+			float: left;
+			width: 350px;
+			height: 120px;
+			padding-top: 35px;
+
+		}
+		.weixin .part2{
+			float: right;	
+			padding-left: 50px;		
+			height: 120px;
+			width: 50px;
+		}
+		.weixin .part2 .pic2{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: #454545;
+			border: solid 1px grey;
+			box-shadow: 2px 2px 2px #888888;
+			transition: all 2s;
+		}
+		.weixin .part2 .pic2:hover{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: #454545;
+			border: solid 1px grey;
+			transform: rotate(180deg);
+			transition: all 2s;
+		}
+		.weixin .part2 .pic3{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border: solid 1px grey;
+			box-shadow: 2px 2px 2px #888888;
+			transition: all 2s;
+		}
+		.weixin .part2 .pic3:hover{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border: solid 1px grey;
+			transform: rotate(360deg);
+			transition: all 2s;
+		}
+		.weixin .part2 .pic4{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			box-shadow: 2px 2px 2px #888888;
+			border: solid 1px grey;
+			transition: all 2s;
+		}
+		.weixin .part2 .pic4:hover{
+			margin-left: 4px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			border: solid 1px grey;
+			
+			transform: rotate(-180deg);
+			transition: all 2s;
+		}
+		.weixin .part2 .pic2 img{
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			background-size: 100%;
+			padding-top: 10px;
+			padding-left: 10px;
+
+		}
+		.weixin .part2 span{
+			cursor: pointer;
+			width: 70px;
+			font-weight: bold;
+			display: block;
+			padding-top: 10px;
+			font-size: 12px;
+			color: black;
+			text-shadow: 0.5px 0.5px 1px white;
+			transform: scale(1.0);
+			transition: all 0.3s;
+		}
+		.weixin .part2 span:hover{
+			width: 70px;
+			font-weight: bold;
+			display: block;
+			padding-top: 10px;
+			font-size: 12px;
+			color: white;
+			transform: scale(1.05);
+			transition: all 0.3s;
+		}
+		.weixin .part2 .pic3 img{
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			background-size: 100%;
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		.weixin .part3 span{
+			display: block;
+			font-weight: bold;
+			padding-top: 10px;
+			font-size: 12px;
+			color: black;
+		}
+		.weixin .part2 .pic4 img{
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			background-size: 100%;
+			padding-top: 10px;
+			padding-left: 10px;
+			transition: all 0.5s;
+			transform: scale(1.0);
+
+		}
+		.weixin .part4 span{
+			display: block;
+			font-weight: bold;
+			padding-top: 10px;
+			font-size: 12px;
+			color: black;
+		}
+
+

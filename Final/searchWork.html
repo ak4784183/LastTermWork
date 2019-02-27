@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+      <div class="navi">
+        <a href="first.html" class="naviact">首页</a>
+        <a href="luntan.html">论坛</a>
+        <a href="myplan.html">成长计划</a>
+        <a href="##">跟踪计划</a>
+        <a href="professional.html">专家咨询</a>
+        <a href="thanks.html">鸣谢</a>
+        </div>
+      <div class="owner">
+        <img src="img/head.png">
+        <a href="personal.html">个人中心</a>
+        <a href="login.html">退出</a>
+      </div>
+    
+    </div>
+    <div class="content6">
+      <div class="yellow">
+        <div class="question">
+          <div class="question_title">
+            <h1>添加任务</h1></div>
+          <div class="question_form">
+            <form  action="${path }/doaddtask"  method="post" autocomplete="off">
+
+      </br>
+      </br>
+    
+      <p>
+       <span class="question_span">阶段：</span>
+        
+        <select name = "stage" id="stage" data-am-selected class="select2">
+                  <option class="select1" value="阶段1" <c:if test="${stage == '阶段1' }">selected</c:if> >1</option>
+                  <option class="select1" value="阶段2" <c:if test="${stage == '阶段2' }">selected</c:if> >2</option>
+                  <option class="select1" value="阶段3" <c:if test="${stage == '阶段3' }">selected</c:if> >3</option>
+                  <option class="select1" value="阶段4" <c:if test="${stage == '阶段4' }">selected</c:if> >4</option>
+                  <option class="select1" value="阶段5" <c:if test="${stage == '阶段5' }">selected</c:if> >5</option>
+                  <option class="select1" value="阶段6" <c:if test="${stage == '阶段6' }">selected</c:if> >6</option>
+                  <option class="select1" value="阶段7" <c:if test="${stage == '阶段7' }">selected</c:if> >7</option>
+                  <option class="select1" value="阶段8" <c:if test="${stage == '阶段8' }">selected</c:if> >8</option>
+                  <option class="select1" value="阶段9" <c:if test="${stage == '阶段9' }">selected</c:if> >9</option>
+                  <option class="select1" value="阶段10" <c:if test="${stage == '阶段10' }">selected</c:if> >10</option>
+      </select>
+      
+      </p>
+
+      <p>
+      <span class="question_span">任务内容：</span>
+        <input  class="select2" type="text" name="content"  required autofocus/>
+         </p>
+      <p>
+     <span class="question_span">任务目标：</span>
+        <input  class="select2" type="text" name="target"  required autofocus/>
+      </p>
+      <input type="hidden" name="complete" value="未完成" />
+      <input type="hidden" name="username" value="${username }" />
+      
+ 
+      <p>
+
+        <button type="submit" class="question_sure">确定</button>
+       
+        
+      </p> 
+      <br>
+    </form>
+
+
+        <div class="registerdiv">
+
+      </br>
+  
+      
+      <div class="question_title"><h1>已有任务</h1></div>
+    </br>
+    <p><span class="question_span">阶段：${stage}</span>  
+      </p> 
+    <c:forEach items="${list }" var="a">
+      </br>
+   
+      
+      
+      <p><span class="question_span">任务内容：${a.content}</span>  
+      </p> 
+      
+      <p><span class="question_span">任务目标：${a.target}</span>  
+      </p>
+      
+       <p><span class="question_span">完成情况：${a.complete}</span>  
+      </p>
+      <input type="hidden" name="task_id" value="${a.task_id }" />
+      <p>
+       <button type="submit" class="question_sure">修改</button>
+       </p>
+  </br>
+    </br>
+ </c:forEach>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

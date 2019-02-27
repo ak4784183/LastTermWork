@@ -1,0 +1,404 @@
+        .nav .visiter{
+			float: right;
+			width: 130px;
+			height: 25px;
+			padding-top: 10px;
+			padding-right: 50px;
+		}
+		.nav .visiter img{
+			float: left;
+			width: 23px;
+			height: 23px;
+		}
+		.nav .visiter span{
+			padding-left: 3px;
+			width: 70px;
+			height: 20px;
+			font-size: 15px;
+			font-weight: bold;
+			color: white;
+		}
+		#left {
+            float: left;
+            width: 900px;
+            height: 563px;
+		}
+		.left{
+			width: 900px;
+			height: 563px;
+			margin-left: 50px;
+			
+		}
+		.title{
+			width: 400px;
+			height: 120px;		
+			margin: 0 auto;
+			padding-top: 30px;
+			text-align: center;
+		}
+		.title .huxue{
+			font-size: 40px;
+			font-weight: bold;
+			transform: scale(1.0);
+			transition: all 1s;
+		}
+		.title .huxue:hover{
+            font-size: 40px;
+			font-weight: bold;
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+		.title .yingwen{
+			font-family: serif;
+			transform: scale(1.0);
+			transition: all 1s;
+		}
+		.title .yingwen:hover{
+			font-family: serif;
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+
+		.btn1{
+			padding-top: 30px;
+			height: 80px;
+		}
+		.btn1 .part{
+            margin-left: 90px;
+			float: left;
+			width: 200px;
+			height: 70px;
+			
+		}
+		.btn1 .pic1{
+			float: left;
+			width: 50px;
+			height: 50px;
+			background-color: white;
+            border-radius: 50%;
+            border: solid 5px #556FF7;
+            transform: scale(1.0);
+            transition: all 1s;
+		}
+		.btn1 .pic1:hover{
+			float: left;
+			width: 50px;
+			height: 50px;
+			background-color: white;
+            border-radius: 50%;
+            border: solid 5px #FF5F00;
+            transform: scale(1.2);
+            transition: all 1s;
+		}
+		.btn1 .pic1 img{
+			width: 25px;
+			height: 25px;
+			font-size: 100%;
+			margin-left: 13px;
+			margin-top: 13px;
+        }
+        .btn1 .part p{
+        	width: 100px;
+        	height: 40px;
+        	float: left;
+        	display: block;
+        	font-size: 13px;
+        	font-weight: bold;
+        	padding-top: 10px;
+        	padding-left: 7px;
+        }
+        .massage{
+        	padding-top: 30px;
+        	margin-left: 90px;
+        	width: 735px;
+        	height: 260px;
+        	
+        }
+        .part1{
+
+        	width: 735px;
+        	height: 65px;
+        
+
+        }
+        .part1 .word{
+        	width: 735px;
+        	height: 35px;
+        }
+        .part1 .word p{
+        	cursor: pointer;
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        }
+        .part1 .word p:hover{
+        	cursor: pointer;
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        	color: #4169E1;
+        }
+        .part1 .word #span1{
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        	padding-left: 261px;
+        }
+        .part1 .word #span2{
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        	padding-left: 515px;
+        }
+        .part1 .word #span3{
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        	padding-left: 565px;
+        }
+        .part1 .word #span4{
+        	display: block;
+        	float: left;
+        	font-size: 13px;
+        	font-weight: bold;
+        	padding-left: 330px;
+        }
+        .part1 .whole{
+        	width: 735px;
+        	height: 8px;
+        	background-color: lightgrey;
+        	border-radius: 10px;
+        }
+        .part1 .whole #per1{
+        	cursor: pointer;
+            width: 551.25px;
+        	height: 8px;
+        	background-color: #454545;
+        	border-radius: 10px;
+        }
+        .part1 .whole #per2{
+        	cursor: pointer;
+        	width: 661.25px;
+        	height: 8px;
+        	background-color: #FF5F00;
+        	border-radius: 10px;
+        }
+        .part1 .whole #per1:hover{
+        	background-color: #4169E1;
+        	transition: all 2s;
+        	width: 735px;
+        }
+        .part1 .whole #per2:hover{
+        	background-color: #4169E1;
+        	transition: all 2s;
+        	width: 735px;
+        }
+        .part1 .whole #per3:hover{
+        	background-color: #4169E1;
+        	transition: all 2s;
+        	width: 735px;
+        }
+        .part1 .whole #per4:hover{
+        	background-color: #4169E1;
+        	transition: all 2s;
+        	width: 735px;
+        }
+        .part1 .whole #per3{
+        	cursor: pointer;
+            width: 698.25px;
+        	height: 8px;
+        	background-color: #454545;
+        	border-radius: 10px;
+        }
+        .part1 .whole #per4{
+        	cursor: pointer;
+        	width: 477.75px;
+        	height: 8px;
+        	background-color: #FF5F00;
+        	border-radius: 10px;
+        }
+		#right{
+			float: left;
+			width: 536px;
+			height: 563px;
+			
+		}
+		.rightbox{
+			margin-top: 50px;
+			width: 498px;
+			height: 460px;
+			margin-left: 50px;			
+			border-left: solid 1px grey;
+			
+			
+		}
+		.login{
+			width: 490px;
+			height: 450px;
+			
+
+		}
+		#right .rightbox .login .header{
+			padding-top: 40px;
+			padding-left: 200px;
+		}
+		#right .rightbox .login .header img{
+			width: 180px;
+			height: 180px;
+			background-size: 100%;
+			border-radius: 50%;
+			border: solid 1px grey;
+		
+			transition: all 3s;
+		}
+		#right .rightbox .login .header img:hover{
+			width: 180px;
+			height: 180px;
+			background-size: 100%;
+			border-radius: 50%;
+			border: solid 1px grey;
+			transform: rotate(360deg);
+			transition: all 3s;
+		}
+		#right .rightbox .login .push{
+			margin-left: 140px;
+			width: 350px;
+			height: 240px;
+			
+		}
+		#right .rightbox .login .push .user{
+			margin-top: 30px;
+			width: 350px;
+			height: 50px;
+			
+		}
+		#right .rightbox .login .push .user input{
+			width: 300px;
+			height: 35px;
+			border-radius: 10px;
+			border: solid 1px grey;
+
+		}
+
+		#right .rightbox .login .push .pwd{
+			margin-top: 30px;
+			width: 350px;
+			height: 50px;
+			
+		}
+
+		#right .rightbox .login .push .pwd input{
+			width: 300px;
+			height: 35px;
+			border-radius: 10px;
+			border: solid 1px grey;
+
+		}
+
+		#right .rightbox .login .push .submit{
+			margin-top: 30px;
+			width: 300px;
+			height: 50px;
+
+		}
+		.inputleft{
+			float: left;
+			margin-left: 20px;
+			
+		}
+		.inputleft button{
+			display: block;
+			width: 80px;
+			height: 25px;
+			border-radius: 7px;
+			border: solid 1px grey;
+			box-shadow: 1px 1px 1px #888888;
+			background-color:white;
+			cursor: pointer;
+			transform: scale(1.0);
+			transition: all 0.5s;
+		}
+		.inputleft button:hover{
+			display: block;
+			width: 80px; 
+			height: 25px;
+			color: white;
+			border-radius: 7px;
+			border: solid 1px grey;
+			background-color:#FF9800;
+			cursor: pointer;
+			transform: scale(1.1);
+			transition: all 0.5s;
+		}
+		.inputright{
+			float: right;
+			margin-right: 20px;			
+		}
+
+        .inputright .zhuche{
+            display: block;
+        	width: 78px;
+			height: 23px;
+			margin-left: 100px;
+			border-radius: 7px;
+			box-shadow: 1px 1px 1px #888888;
+			border: solid 1px grey;
+			background-color: white;
+			color: black;
+			font-size: 14px;
+			text-align: center;
+			transform: scale(1.0);
+			transition: all 0.5s;
+
+        }
+        .inputright .zhuche:hover{
+            display: block;
+        	width: 78px;
+			height: 23px;
+			margin-left: 100px;
+			border-radius: 7px;
+			border: solid 1px grey;
+			background-color:#FF9800;
+			color: black;
+			color: white;
+			font-size: 14px;
+			text-align: center;
+			transform: scale(1.1);
+			transition: all 0.5s;
+
+        }
+
+
+
+		.other{
+			width: 300px;
+			height: 20px;
+		}
+		.other a{
+			display: block;
+			float: right;
+			width: 100px;
+			height: 20px;
+			font-size: 10px;
+			cursor: pointer;
+			color: black;
+		}
+		.other a:hover{
+			display: block;
+			float: right;
+			width: 100px;
+			height: 20px;
+			font-size: 10px;
+			cursor: pointer;
+			color: blue;
+		}
+
+
+
+
+		

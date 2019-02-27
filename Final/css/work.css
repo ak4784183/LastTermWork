@@ -1,0 +1,361 @@
+#homework{
+	height: 1700px;		
+}
+
+.homework{
+	margin: 0 auto;
+	margin-top: 130px;
+    width: 1200px;
+    height: 1700px;
+}
+#lunbo{
+    box-shadow: 10px 10px 10px #888888;
+	width: 950px;
+	height: 600px;
+	margin: 0 auto;
+	border: solid 2px black;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1.0);
+    transition: all 1s;
+}
+#lunbo:hover{
+    box-shadow: 10px 10px 10px #888888;
+	width: 950px;
+	height: 600px;
+	margin: 0 auto;
+	border: solid 2px black;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.lunbo{
+	position: relative;
+}
+#lunbo img{
+	float: left;
+    width: 950px;
+    height: 600px;
+    background-size: 100%;
+}
+#point{
+	margin: 0 auto;
+	width: 600px;
+	height: 50px;
+}
+#point .point{
+	margin-top: 10px;
+	margin-left: 190px;
+	width: 200px;
+	height: 50px;
+}
+
+#point .point a{
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	border: solid 2px black;
+	border-radius: 50%;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+#point .point .btnactive{
+    border: solid 2px black;
+    background-color: black;
+}
+.actitle{
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+.actitle p{
+	display: block;
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;	
+}
+.actitle span,.teamtitle span,.huiyuantitle span,.videotitle span{
+	display: block;
+	font-size: 13px;
+	text-align: center;
+}
+
+#homepic{
+	margin: 0 auto;
+
+	width: 1000px;
+    height: 1000px;
+}
+.homeheader{
+	margin: 0 auto;
+	width: 600px;
+	height: 150px;
+
+}
+.homeheader p{
+	display: block;
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;	
+}
+.homeheader span{
+	display: block;
+	font-size: 13px;
+	text-align: center;
+}
+.homeboxl{
+	float: left;
+	width: 470px;
+	height: 300px;
+	margin-top: 70px;
+
+
+}
+.homeboxr{
+	float: right;
+	width: 470px;
+	height: 300px;
+	margin-top: 70px;
+	
+
+}
+#homepic img{
+	width: 450px;
+	height: 260px;
+	background-size: 100%;
+	border-radius: 10px;
+	border: solid 2px black; 
+	box-shadow: 10px 10px 5px #888888;
+}
+.homeboxl p{
+	margin-top: 20px;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.homeboxr p{
+	margin-top: 20px;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#video{
+	height: 1100px;
+}
+#video .video{
+	margin: 0 auto;
+	padding-top: 200px;
+	width: 900px;
+	height: 700px;
+
+
+}
+#video .video video{
+    box-shadow: 10px 10px 10px #888888;
+	width: 898px;
+	height: 505px;
+	border: solid 2px black;
+	border-radius: 10px;
+}
+#video .video .videotitle{
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#video .video .videotitle h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+#team{
+	height: 700px;
+}
+#team .team{
+	margin: 0 auto;
+	width: 900px;
+	height: 800px;
+}
+#team .team .teamtitle{
+	width: 400px;
+	height: 100px;
+	margin: 0 auto;
+}
+#team .team .teamtitle h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+#team .team img{
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 800px;
+	height: 500px;
+	border: solid 2px white;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px #888888;
+	transition: all 2s;
+}
+#team .team img:hover{
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 800px;
+	height: 500px;
+	border: solid 2px white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 0px #888888;
+	transform: rotate(360deg);
+	transition: all 2s;
+}
+
+#huiyuan{
+    padding-top: 200px;
+	margin: 0 auto;
+	width: 900px;
+	height: 1100px;
+}
+.huiyuantitle{
+
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+}
+.huiyuantitle h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+.huiyuan{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 300px;
+	height:650px;
+    border: solid 2px #DCDCDC;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 3px #888888;
+    overflow: hidden;
+    transform: scale(1.0);
+    transition: all 0.5s;
+}
+.huiyuan:hover{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 300px;
+	height:650px;
+    border: solid 2px #DCDCDC;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 3px #888888;
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.huiyuan .huiyuan_top{
+    border-top: solid 6px #FF8C00;
+    width: 300px;
+    height: 200px;
+   
+    border-bottom: solid 1px #DCDCDC;
+}
+.huiyuan .huiyuan_top .huiyuan_box{
+	width: 110px;
+	height: 150px;
+
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.huiyuan .huiyuan_top .huiyuan_box span{
+	margin-top: 10px;
+	display: block;
+	font-size: 15px;
+	color: #FF8C00;
+	text-align: center;
+}
+.huiyuan .huiyuan_top .huiyuan_box p{
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 50px;
+    text-align: center;
+}
+.huiyuan_body{
+	margin-top: 4px;
+	border-top: solid 1px #DCDCDC;
+	height: 380px;
+	width: 300px;
+}
+.huiyuan_list{
+	width: 120px;
+	height: 300px;
+
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.huiyuan_part{
+	width: 110px;
+	height: 40px;
+}
+.huiyuan_list .huiyuan_part img{
+	display: block;
+	margin-top: 10px;
+	float: left;
+	width: 23px;
+	height: 23px;
+	background-size: 100%;
+    
+}
+.huiyuan_list span{
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.huiyuan_zhuche{
+	margin: 0 auto;
+	width: 100px;
+	height: 40px;
+
+}
+.huiyuan_zhuche a{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+	height: 32px;
+	background-color: #FF8C00;
+	color: white;
+	border-radius: 7px;
+	box-shadow: 2px 2px 2px #888888;
+	border: solid 0.5px lightgrey;
+	transform: scale(1.0);
+	transition: all 0.5s;
+}
+.huiyuan_zhuche a:hover{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+	height: 32px;
+	background-color: #6495ED;
+	color: black;
+	border-radius: 7px;
+	box-shadow: 0px 0px 0px #888888;
+	border: solid 0.5px lightgrey;
+	transform: scale(1.05);
+	transition: all 0.5s;
+}

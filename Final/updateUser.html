@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css"></head>
+  
+  <body>
+    <div class="nav1">
+    <div class="navi">
+      <a href="first.html" class="naviact">首页</a>
+      <a href="luntan.html">论坛</a>
+      <a href="myplan.html"  class="naviact">成长计划</a>
+      <a href="##">跟踪计划</a>
+      <a href="professional.html">专家咨询</a>
+      <a href="thanks.html">鸣谢</a>
+    </div>
+    <div class="owner">
+      <img src="img/head.png">
+      <a href="personal.html">个人中心</a>
+      <a href="login.html">退出</a>
+    </div>
+  </div>
+    <div class="content6">
+      <div class="yellow">
+        <div class="question">
+          <div class="question_title">
+            <h1>修改个人信息</h1></div>
+          <div class="question_form">
+            <form action="${path }/docompleteuser" method="post" autocomplete="off"></br>
+              </br>
+              <p>
+                <span class="question_span">用户账号：</span>
+                <input class="select2" type="text" name="username" value="${username }" required autofocus readOnly="true" /></p>
+              <p>
+                <span class="question_span">真实姓名：</span>
+                <input class="select2" type="text" name="usertruename" required autofocus/></p>
+              <p>
+                <span class="question_span">电子邮箱：</span>
+                <input class="select2" type="text" name="email" required autofocus/></p>
+              <p>
+                <span class="question_span">微信号码：</span>
+                <input class="select2" type="text" name="wechat" required autofocus/></p>
+              <p>
+                <span class="question_span">孩子姓名：</span>
+                <input class="select2" type="text" name="child_name" required autofocus/></p>
+              <p>
+                <span class="question_span">孩子性别：</span>
+                <select name="child_sex" data-am-selected class="select2">
+                  <option class="select1" value="男生" <c:if test="${child_sex == '男生' }">selected</c:if>>男生</option>
+                  <option class="select1" value="女生" <c:if test="${child_sex == '女生' }">selected</c:if>>女生</option></select>
+              </p>
+              <p>
+                <span class="question_span">孩子生日：</span>
+                <input class="select2" type="month" name="birthday" required autofocus/></p>
+              <p>
+                <span class="question_span">孩子类型：</span>
+                <select name="child_type" data-am-selected class="select2">
+                  <option class="select1" value="规矩型">规矩型</option>
+                  <option class="select1" value="自我型">自我型</option>
+                  <option class="select1" value="合群型">合群型</option>
+                  <option class="select1" value="好动型">好动型</option>
+                  <option class="select1" value="勤奋聪明型">勤奋聪明型</option>
+                  <option class="select1" value="聪明多虑型">聪明多虑型</option>
+                  <option class="select1" value="勤奋努力型">勤奋努力型</option>
+                  <option class="select1" value="被动学习型">被动学习型</option>
+                  <option class="select1" value="消极敷衍型">消极敷衍型</option>
+                  <option class="select1" value="聪明贪玩型">聪明贪玩型</option>
+                  <option class="select1" value="不愿学习型">不愿学习型</option>
+                  <option class="select1" value="懒惰依赖型">懒惰依赖型</option></select>
+              </p>
+              <p>
+                <span class="question_span">亲属关系：</span>
+                <select name="withchild" data-am-selected class="select2">
+                  <option class="select1" value="父亲" <c:if test="${withchild == '父亲' }">selected</c:if>>父亲</option>
+                  <option class="select1" value="母亲" <c:if test="${withchild == '母亲' }">selected</c:if>>母亲</option>
+                  <option class="select1" value="其他" <c:if test="${withchild == '其他' }">selected</c:if>>其他</option></select>
+                <p>
+                  <span class="question_span">就读学校：</span>
+                  <input class="select2" type="text" name="child_school" required autofocus/></p>
+                <p>
+                  <span class="question_span">所在年级：</span>
+                  <select name="child_grade" data-am-selected class="select2">
+                    <option class="select1" value="幼儿园" <c:if test="${child_grade == '幼儿园' }">selected</c:if>>幼儿园</option>
+                    <option class="select1" value="学前班" <c:if test="${child_grade == '学前班' }">selected</c:if>>学前班</option>
+                    <option class="select1" value="小学" <c:if test="${child_grade == '小学' }">selected</c:if>>小学</option>
+                    <option class="select1" value="初中" <c:if test="${child_grade == '初中' }">selected</c:if>>初中</option>
+                    <option class="select1" value="高中" <c:if test="${child_grade == '高中' }">selected</c:if>>高中</option>
+                    <option class="select1" value="其他" <c:if test="${child_grade == '其他' }">selected</c:if>>其他</option></select>
+                </p>
+                <p>
+                  <span class="question_span">所在城市：</span>
+                  <input class="select2" type="text" name="city" required autofocus/></p>
+                <p>
+                  <span class="question_span">所在城区：</span>
+                  <input class="select2" type="text" name="city_proper" required autofocus/></p>
+                <p>
+                  <span class="question_span">遇到的问题：</span></p>
+                <textarea rows="4" cols="30" name="edu_problems" placeholder="输入三个在教育孩子遇到最焦虑的问题:"></textarea>
+                <br></br>
+                <p>
+                  <button type="submit" class="question_sure">确认</button>
+                <br></form>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="talk">
+        <div class="talkbox">
+          <div class="this">
+            <span>儿童成长规划</span></div>
+          <div class="talkus">
+            <div class="first">
+              <span>关于我们</span>
+              <span>联系我们</span>
+              <span>赞助我们</span></div>
+            <div class="second">
+              <span>帮助我们</span>
+              <span>信息反馈</span>
+              <span>项目投资</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="show">
+        <div class="ewm">
+          <img src="img/二维码.png">
+          <p>扫描二维码关注公众号</p>
+        </div>
+        <div class="jigou">
+          <p id="this">合作机构</p>
+          <div class="this">
+            <p>ITM教育</p>
+          </div>
+          <div class="this">
+            <p>岑泽基教学实验团队</p>
+          </div>
+        </div>
+      </div>
+      <div class="weixin">
+        <div class="part2">
+          <div class="pic2">
+            <img src="img/下载.png"></div>
+          <span>下载客户端</span></div>
+        <div class="part2">
+          <div class="pic3">
+            <img src="img/QQ.png"></div>
+          <span>&nbsp&nbsp官方QQ</span></div>
+        <div class="part2">
+          <div class="pic4">
+            <img src="img/微信.png"></div>
+          <span>&nbsp&nbsp官方微信</span></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/first.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="nav2">
+		
+	</div>
+	<div class="content2">
+        <div class="box">
+        	<div class="boxtitle">
+        		<div class="boxline3"></div>
+        		<span class="boxword2">找回密码</span>
+        		<div class="boxline4"></div>
+        	</div>
+        	<div class="btnlist">
+        		<div class="btnpart">
+        			<div>
+        				<input type="text" name="regPhone" placeholder="  请输入你绑定的手机号
+        				 " id="spc">
+        			<span>发送</span>
+        			</div>
+        			<input type="password" name="authCode" placeholder="  手机短信验证码">
+        			<input type="password" name="regPwd" placeholder="  重置密码">
+        			<input type="password" name="regPwdRepeat" placeholder="  确认密码">
+        			
+        		</div>
+        		
+        		<div id="sure">
+        			<button type="submit">确认</button>
+        			<a href="first.html">返回>></a>
+        		</div>
+        	</div>
+        	
+        </div>	
+    </div>
+    <div class="footer">
+		<div class="talk">
+			<div class="talkbox">
+				<div class="this">
+					<span>儿童成长规划</span>
+				</div>
+				<div class="talkus">
+					<div class="first">
+						<span>关于我们</span>
+						<span>联系我们</span>
+						<span>赞助我们</span>
+					</div>
+					<div class="second">
+						<span>帮助我们</span>
+						<span>信息反馈</span>
+						<span>项目投资</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="show">
+			<div class="ewm">
+				<img src="img/二维码.png">
+				<p>扫描二维码关注公众号</p>
+			</div>
+			<div class="jigou">
+				<p id="this">合作机构</p>
+				<div class="this"><p>ITM教育</p></div>
+				<div class="this"><p>岑泽基教学实验团队</p></div>
+			</div>
+			
+			</div>
+			<div class="weixin">
+				<div class="part2">
+					<div class="pic2">
+						<img src="img/下载.png">
+					</div>
+					<span>下载客户端</span>
+				</div>
+				<div class="part2">
+					<div class="pic3">
+						<img src="img/QQ.png">
+					</div>
+					<span>&nbsp&nbsp官方QQ</span>
+				</div>
+				<div class="part2">
+					<div class="pic4">
+						<img src="img/微信.png">
+					</div>
+					<span>&nbsp&nbsp官方微信</span>
+				</div>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	$(".btnpart input").blur(function(){
+        var inputName=$(this).attr("name");
+        var regtext="";
+        switch(inputName){
+            case "regPhone":
+            regtext=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+            break;
+            
+            case "regEmail":
+            regtext=/\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+            break;
+
+            case "regName":
+            regtext=/^.{2,16}$/;
+            break;
+
+            case "regPwd":
+            regtext=/^[a-zA-Z]\w{5,17}$/;
+
+            break;
+
+            case "regPwdRepeat":
+            regtext=/^[a-zA-Z]\w{5,17}$/;
+            break;
+
+            case "authCode":
+            regtext=/^\d{4}$/;
+            break;
+
+            default:
+            regtext=/^\d{6}$/;
+        }
+        if (regtext.test($(this).val())) {
+            return;
+        }else{
+            $(this).css("border","1px solid red");
+            alert("请填写正确的格式");
+        }
+    })
+</script>
+</html>

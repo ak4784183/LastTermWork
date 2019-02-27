@@ -1,0 +1,115 @@
+.content{
+			height: 563px;
+			width: 1500px;
+			margin: 0 auto;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+			/*opacity:0.10;  254,161,167, 0.10*/
+
+		}
+
+.content2{
+	margin: 0 auto;
+	        height: 603px;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+}
+.content3{
+	margin: 0 auto;
+	height: 703px;
+/*            /*background-color: #FEA1A7;*/
+			background: url("../img/kid.jpg");
+			background-size: 100%;
+			opacity: 0.9;
+			box-shadow: 5px 5px 5px #888888;
+			transition: all 1s;
+}
+.content3:hover{
+	height: 703px;
+/*            /*background-color: #FEA1A7;*/
+			background: url("../img/kid.jpg");
+			background-size: 100%;
+			opacity: 0.9;
+			box-shadow: 20px 20px 5px #888888;
+			transition: all 1s;
+}
+/*个人中心*/
+.content4{  
+	width: 1000px;
+	margin: 0 auto;
+	        height: 613px;
+            /*background-color: #FEA1A7;*/
+		
+}
+/*论坛*/
+.content5{
+            height: 1503px;
+            margin: 0 auto;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+
+}
+/*question*/
+.content6{  
+	padding-top: 90px;
+			height: 1603px;
+			margin: 0 auto;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+			/*opacity:0.10;  254,161,167, 0.10*/
+}
+.content7{  
+	padding-top: 90px;
+			height: 4850px;
+			margin: 0 auto;
+			background: rgba(135,206,250,0.1);
+}
+/*技能表*/
+.content9{  
+	padding-top: 90px;
+			height: 7160px;
+			margin: 0 auto;
+			background: rgba(135,206,250,0.1);
+}
+/*鸣谢*/
+.content8{  
+	padding-top: 40px;
+			 height: 913px;
+			margin: 0 auto;
+			background: rgba(135,206,250,0.1);
+}
+/*错误页面*/
+.content10{  
+	width: 1000px;
+	margin: 0 auto;
+	        height: 430px;
+            /*background-color: #FEA1A7;*/
+		
+}
+/*下载*/
+.content11{  
+	width: 1500px;
+	margin: 0 auto;
+	        height: 1013px;
+            /*background-color: #FEA1A7;*/
+		
+}
+/*规划表查询*/
+.content6{  
+	padding-top: 90px;
+			height: 2450px;
+			margin: 0 auto;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+			/*opacity:0.10;  254,161,167, 0.10*/
+}
+/*中型高度 */
+.content12{
+	padding-top: 90px;
+            height: 603px;
+            margin: 0 auto;
+            /*background-color: #FEA1A7;*/
+			background: rgba(135,206,250,0.1);
+
+}
+

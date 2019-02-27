@@ -1,0 +1,30 @@
+#this_box{
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 900px;
+	height: 300px;
+}
+.this_box{
+	margin-top: 100px;
+	width: 500px;
+	height: 180px;
+	margin: 0 auto;
+    border-radius: 20px;
+	background-color: rgba(250,250,210,0.8);
+	box-shadow: 8px 8px 10px #888888;
+	border: solid 2.5px black;
+}
+#this_little{
+	width: 490px;
+	height: 150px;
+	margin: 0 auto;
+}
+#this_little p{
+	padding-left: 150px;
+}
+.this_title{
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
